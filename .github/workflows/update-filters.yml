@@ -1,0 +1,56 @@
+name: Update uBlock Filters
+
+on:
+  schedule:
+    - cron: '0 3 * * *'
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Install Dependencies
+        run: sudo apt-get update && sudo apt-get install -y jq
+
+      - name: Execute Merge Script
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          chmod +x merge-ublock-filters.sh
+          ./merge-ublock-filters.sh
+
+      - name: Commit and Push
+        id: commit_step
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add *.txt
+          if git commit -m "Update filters: $(date -u) [ci skip]"; then
+            git push
+            echo "changed=true" >> $GITHUB_OUTPUT
+          else
+            echo "changed=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Discord Notification
+        if: always()
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+        run: |
+          if [ "${{ job.status }}" == "success" ]; then
+            if [ "${{ steps.commit_step.outputs.changed }}" == "true" ]; then
+              L_BLK=$(wc -l < filter-block.txt)
+              PAYLOAD='{"username":"Filter Bot","embeds":[{"title":"🟢 SUCCESS: Filters Updated","color":3066993,"fields":[{"name":"Blocking Rules","value":"```'"$L_BLK"'```","inline":true}]}]}'
+            else
+              PAYLOAD='{"username":"Filter Bot","embeds":[{"title":"🟡 NOTICE: No Changes","color":16776960,"description":"Source filters are already up to date."}]}'
+            fi
+          else
+            PAYLOAD='{"username":"Filter Bot","embeds":[{"title":"🔴 FAILED: Build Error","color":15158332,"description":"A fatal error occurred. Check logs for API limits or connection issues."}]}'
+          fi
+          curl -X POST -H "Content-Type: application/json" -d "$PAYLOAD" $DISCORD_WEBHOOK
