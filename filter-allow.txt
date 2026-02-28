@@ -1,6 +1,6 @@
 ! Title: Exception Rules
-! Updated: 2026-02-27 04:47:29 UTC
-! Total Rules: 16949
+! Updated: 2026-02-28 04:17:03 UTC
+! Total Rules: 16956
 
 @@#.banner%20ad.$image,domain=dokuo666.blog98.fc2.com
 @@$cookie=__gads,domain=godstoryinfo.com|laweducationinfo.com|rsgames.xyz|vichitrainfo.com
@@ -347,6 +347,7 @@
 @@/google-adwords$domain=t3n.de,~third-party
 @@/googleads.g.doubleclick.net/[a-z0-9]*$/$xmlhttprequest,domain=sovetromantica.com
 @@/gtm.js$script,domain=subscriptions.amd.com
+@@/hdful/player.php?video=$stealth=referrer
 @@/hls*/*.m3u8$stealth=referrer,domain=techclips.net|b4ucast.com
 @@/hls.key$stealth=referrer
 @@/hls/*$stealth=referrer,domain=closeload.top
@@ -1290,6 +1291,7 @@
 @@||aggregator.service.usercentrics.eu/aggregate/$domain=flaschenpost.de
 @@||aggregator.service.usercentrics.eu/aggregate/$domain=marktredwitz.de
 @@||aggregator.service.usercentrics.eu/aggregate/$domain=moebel.de
+@@||aggregator.service.usercentrics.eu/aggregate/$domain=ullstein.de
 @@||aggregator.service.usercentrics.eu/aggregate/*templates=$domain=highsnobiety.com
 @@||aggregator.service.usercentrics.eu/aggregate/de?templates=$domain=wetter.com|kabeleinsdoku.de|kabeleinsdoku.at
 @@||aggregator.service.usercentrics.eu/aggregate^$domain=sixx.de|prosiebenmaxx.de|sat1.de|prosieben.de|kabeleins.de|sixx.de|sat1gold.de|ran.de|joyn.de|sat1.at
@@ -1893,6 +1895,7 @@
 @@||api.usercentrics.eu/settings/$domain=technisat.com
 @@||api.usercentrics.eu/settings/$domain=wohnglueck.de
 @@||api.usercentrics.eu/settings/*.json$domain=sso.bonify.de
+@@||api.usercentrics.eu/settings/*.json$domain=ullstein.de
 @@||api.usercentrics.eu/settings/*/latest$domain=kabeleinsdoku.de|kabeleinsdoku.at
 @@||api.usercentrics.eu/settings/*/latest/*.json$domain=filialen.santander.de
 @@||api.usercentrics.eu/settings/*/latest/*.json$domain=kabeleinsdoku.de|kabeleinsdoku.at
@@ -1999,6 +2002,7 @@
 @@||app.usercentrics.eu/*/main.js$domain=morenutrition.de
 @@||app.usercentrics.eu/browser-sdk/$domain=kabeleinsdoku.de|kabeleinsdoku.at
 @@||app.usercentrics.eu/browser-sdk/*/cross-domain-bridge.html$domain=sixx.de|prosiebenmaxx.de|sat1.de|prosieben.de|kabeleins.de|sixx.de|sat1gold.de|ran.de|joyn.de|sat1.at
+@@||app.usercentrics.eu/browser-sdk/*/cross-domain-bridge.html$domain=ullstein.de
 @@||app.usercentrics.eu/browser-ui/$domain=dfbplay.tv
 @@||app.usercentrics.eu/browser-ui/$domain=limango.pl
 @@||app.usercentrics.eu/browser-ui/$domain=meineschufa.de
@@ -2225,6 +2229,7 @@
 @@||audible.com^$stealth=3p-cookie
 @@||audience.io/api/$domain=campaign.aptivada.com
 @@||audiko.net/api/$stealth=referrer
+@@||audio-*.scdn.co/audio/$redirect=noopmp4-1s,app=com.apple.Safari
 @@||audio-sound-premium.com^$ghide
 @@||audiomodern.com^$stealth=ip
 @@||audiostream.com^$elemhide
@@ -3136,6 +3141,7 @@
 @@||cdn.contentful.com/spaces^$stealth=3p-auth
 @@||cdn.conversant.mgr.consensu.org/gdpr/cmp/config/m/e/mentalfloss.com/config.js$domain=mentalfloss.com
 @@||cdn.cookie-script.com^$script,xmlhttprequest,domain=hellozdrowie.pl
+@@||cdn.cookie-script.com^$script,xmlhttprequest,domain=streetstyle24.pl
 @@||cdn.cookiehub.eu/c2/*.$domain=ro.kruk.eu
 @@||cdn.cookielaw.org/$script,xmlhttprequest,domain=crunchyroll.com
 @@||cdn.cookielaw.org/*/OtAutoBlock.js$script,xhr,domain=html5.gamedistribution.com
@@ -3840,6 +3846,7 @@
 @@||cdn.ziffstatic.com/pg/ign.$script,domain=ign.com
 @@||cdn01js.dziennikwschodni.pl/js/showads.min.js
 @@||cdn1.comicknew.pictures^$image,stealth=referrer
+@@||cdn4ads.com/*/xhumane.min.js$script,domain=torupload.com|nathanmichaelphoto.com
 @@||cdn61.zvooq.com/track/stream^$stealth=referrer
 @@||cdnb.4strokemedia.com^$domain=video.corriere.it
 @@||cdnb.4strokemedia.com^$domain=video.gazzetta.it
@@ -6270,7 +6277,6 @@
 @@||fwmrm.net^*/admanager.js$script,3p,domain=southpark.*|southparkstudios.*
 @@||fwmrm.net^*/admanager.js$script,3p,domain=southpark.cc.com|southpark.de|southpark.lat|southparkstudios.com|southparkstudios.com.br|southparkstudios.de
 @@||fx-24.xyz^$generichide
-@@||fx545.site^$ghide
 @@||fxporn69.com^$generichide
 @@||fzm.*^$ghide
 @@||fzmovies.*^$generichide
@@ -7689,6 +7695,7 @@
 @@||googletagmanager.com/gtm.js$script,domain=shakeshack.com
 @@||googletagmanager.com/gtm.js$script,domain=shockwave.com
 @@||googletagmanager.com/gtm.js$script,domain=slack.com
+@@||googletagmanager.com/gtm.js$script,domain=streetstyle24.pl
 @@||googletagmanager.com/gtm.js$script,domain=suspilne.media
 @@||googletagmanager.com/gtm.js$script,domain=tele2.ee
 @@||googletagmanager.com/gtm.js$script,domain=thenorthface.com
@@ -8075,6 +8082,7 @@
 @@||hindustantimes.com/res/js/*ads*
 @@||hintertuxergletscher.at/typo3conf/ext/bh/Resources/Public/*/cookie-popup.$domain=hintertuxergletscher.at
 @@||hints.littlealchemy2.com^$ghide
+@@||hiperinfo.pl/popup3.js
 @@||hiphopa.net^$ghide
 @@||hisse.net^$generichide
 @@||hisseyorumlari.com^$generichide
@@ -10105,7 +10113,6 @@
 @@||megadrive-emulator.com^$generichide
 @@||megafon.ru/static/?files=*/tealeaf.js
 @@||megagames.com^$generichide
-@@||megane.com.pl^$generichide,badfilter
 @@||megaplay.*/stream/$subdocument,stealth=referrer
 @@||megatube.xxx/atrm/s/s/js/m/pr-before.js
 @@||megatube.xxx/atrm/s/s/js/m/pr-before.js$script,1p
@@ -10897,6 +10904,7 @@
 @@||ofertasahora.com^$generichide
 @@||offgamers.com/checkout/buyNow/$document,xmlhttprequest
 @@||officeapps.live.com/*.aspx$stealth
+@@||officeapps.live.com^$domain=cloud.microsoft
 @@||officeworks.com.au^*/site-tracker.js
 @@||offmp3.*^$ghide
 @@||ogjs.infoglobo.com.br/*/js/*advertisement.js
@@ -15454,7 +15462,6 @@
 @@||totalbike.hu^$generichide
 @@||totalcar.hu/assets/js/adbd/ads.js
 @@||totalcar.hu^$generichide
-@@||totalsporteks.io^$ghide
 @@||touhoudougamatome.blog.fc2.com^$generichide
 @@||tous-sports.fr/js/advertisement-AdBlock.js
 @@||tous-sports.tv/js/advertisement-AdBlock.js
