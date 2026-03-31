@@ -1,6 +1,6 @@
 ! Title: Exception Rules
-! Updated: 2026-03-30 05:27:32 UTC
-! Total Rules: 17015
+! Updated: 2026-03-31 05:11:51 UTC
+! Total Rules: 17016
 
 @@#.banner%20ad.$image,domain=dokuo666.blog98.fc2.com
 @@$cookie=__gads,domain=godstoryinfo.com|laweducationinfo.com|rsgames.xyz|vichitrainfo.com
@@ -374,7 +374,6 @@
 @@/invoke.js$domain=emurom.net
 @@/isomorphic/system/modules/ISC_Analytics.js$script,1p
 @@/jannah/*js/advertisement.js|$~third-party
-@@/javascripts/*prebid-ads/ads-prebid*.js^$script,domain=decompiler.com
 @@/js/*.js?ad*=popup&ads=DisplayAd$~third-party,script,domain=streamwish.to|streamxxx.online|mwish.pro|embedwish.com|awish.pro|wishfast.top|sfastwish.com|vidhidevip.com|rubystm.com
 @@/js/*.js?ads*1&AdType=1&$~third-party,script,domain=streamwish.to|streamxxx.online|mwish.pro|embedwish.com|awish.pro|wishfast.top|sfastwish.com|vidhidevip.com|rubystm.com
 @@/js/*/*.js?_v=$~third-party,domain=cracking.org
@@ -425,7 +424,6 @@
 @@/popup*$script,1p,domain=streamingcommunity.*
 @@/prebid-ads/adsensebase.js$script,redirect-rule=prebid-ads.js,domain=darkreading.com
 @@/prebid.min.js$~third-party,domain=tpead.net|advertape.net|tapepops.com|watchadsontape.com|advertisertape.com|tapeadvertisement.com|adblockplustape.xyz|tapelovesads.org|gettapeads.com|tapeadsenjoyer.com|noblocktape.com|antiadtape.com|tapewithadblock.org|streamadblocker.*|strtape.cloud|adblockeronstape.me|streamadblockplus.com|shavetape.*|adblockstrtape.link|adblockstrtech.link|adblockstreamtape.*|stape.fun|strcloud.link|streamtape.*|streamtape.com
-@@/prebid/*$script,domain=decompiler.com
 @@/premium*/*.php$subdocument,stealth=referrer,domain=stronstream.shop|sportzlive.shop
 @@/premium*/tracks-*.html$xmlhttprequest,stealth=referrer
 @@/progress.php?callback=$script,domain=ytmp3.cc
@@ -535,6 +533,7 @@
 @@://www.liquidweb.com/kb/wp-content/themes/lw-kb-theme/images/ads/vps-sidebar.jpg
 @@://www.sinya.com.tw^$stealth=ip
 @@://www3.doubleclick.net^|$xmlhttprequest
+@@://yandex.com/adv/$~third-party
 @@?*=$xhr,1p,strict1p,method=get,domain=a-b-c-d-e-f9jeats0w5hf22jbbxcrpnq37qq6nbxjwypsy.fun
 @@?*=$xhr,1p,strict1p,method=get,domain=hi0ti780.fun|a-b-f-dd-aa-bb-ccyh5my.fun|fle-5r8dchma-moo.com|oimsmosy.fun
 @@?*=$xhr,1p,strict1p,method=get,domain=mjukb26l.fun|ghajini-4urg44yg.lol|scjhg5oh.fun|a-b-f-dd-aa-bb-cctwd3a.fun
@@ -1185,6 +1184,7 @@
 @@||ads.viralize.tv/player/$domain=quotidiano.net
 @@||ads.viralize.tv/t-bid-opportunity/$domain=automoto.it|moto.it
 @@||ads.viralize.tv^|$domain=automoto.it|moto.it
+@@||ads.yandex.com^$~third-party
 @@||ads.youtube.com^|$domain=technorj.com
 @@||ads.zw.pl/www/delivery/asyncjs.php
 @@||ads2.banaraswap.in^$xmlhttprequest,domain=banaraswap.in
@@ -1261,6 +1261,8 @@
 @@||adv.svo.aero/wifi_svo/*$domain=svo.aero
 @@||adv.wp.pl/RM/Box/c/b/money_rail_and_frames/money-rail-1.0.2.js
 @@||adv.wp.pl/bar.gif
+@@||adv.yandex.com^$~third-party
+@@||adv.yandex.ru^$~third-party
 @@||adv.yomiuri.co.jp^$domain=adv.yomiuri.co.jp
 @@||advert.vg.no/1v*.js?v=$domain=e24.no
 @@||advert.vg.no/1v*.js?v=$~third-party
@@ -2394,7 +2396,6 @@
 @@||banking.ing.de/app/obligo/w/r/*/resources/webtrekk-init-ver-*.js
 @@||banklive.net^$generichide
 @@||bankofamerica.com^*?adx=
-@@||bankomap.com.ua^$generichide
 @@||bankrespublika.az^$stealth=dpi
 @@||banner.dna.fi^
 @@||banner.infoey.com/adbanner.png$domain=bchtechnologies.com
@@ -2928,7 +2929,6 @@
 @@||cartoonth12.com^$ghide
 @@||cas.criteo.com/delivery/ajs.php$domain=vladan.fr
 @@||cas.criteo.com/delivery/ajs.php^$domain=lequipe.fr
-@@||cas.criteo.com/delivery/ajs.php^$domain=techobest.com
 @@||casos-aislados.com^$generichide
 @@||catchmyjobs.com^$generichide
 @@||catchup.thisisdax.com/*.m4a$media,domain=globalplayer.com
@@ -4351,7 +4351,8 @@
 @@||codicebusiness.shinystat.com/cgi-bin/getcod.cgi?USER=panoramait&P=2$script,domain=panorama.it
 @@||codicefl.shinystat.com/cgi-bin/getserver.cgi?$script,domain=3bmeteo.com|quotidiano.net|radioitalia.it
 @@||codicefl.shinystat.com/cgi-bin/getswf.cgi?*PolymediaShow$domain=corriereadriatico.it|ilgazzettino.it|ilmattino.it|ilmessaggero.it|leggo.it|quotidianodipuglia.it
-@@||codicibancari.it/javascripts/ads/banner/*.js$domain=decompiler.com
+@@||codicibancari.it/*script*/*.js$domain=decompiler.com
+@@||codicibancari.it/scripts/tracking/pixel/conversion/prebid_*.js$domain=decompiler.com
 @@||codingnepalweb.com^$generichide
 @@||codingstella.com^$generichide
 @@||cohesion.bankrate.com/cohesion/cohesion-latest.min.js$script,1p
@@ -4958,7 +4959,6 @@
 @@||dailycaller.com/*/google-ads-
 @@||dailyfinance.com/traffic/?
 @@||dailygeekshow.com/wp-content/themes/soofresh2/js/advertisement.js^
-@@||dailyhealthkeeper.com^$generichide
 @@||dailyherald.com^$generichide
 @@||dailymail.co.uk/brightcove/tracking/ted3.js
 @@||dailymail.co.uk^$generichide
@@ -11296,7 +11296,6 @@
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=b2bhint.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=babiato.tech
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=bank-codes.com
-@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=bankomap.com.ua
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=basicweb.ru
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=battlestick2.net
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=bdcraft.net
@@ -11568,6 +11567,7 @@
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=okdebrid.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=olamovies.blog
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=olarila.com
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=ondemandkorea.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=onehack.us
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=onehack.us|competentedigitale.ro
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=onejailbreak.com
@@ -11917,6 +11917,7 @@
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xmlhttprequest,domain=spotidown.app
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xmlhttprequest,domain=sshkit.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xmlhttprequest,domain=ssstik.io
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xmlhttprequest,domain=stream.googleapiscdn.com|animevietsub.id
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xmlhttprequest,domain=talksport.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xmlhttprequest,domain=techacrobat.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xmlhttprequest,domain=temp-mail.lol
@@ -12080,6 +12081,7 @@
 @@||panelist.cint.com/assets/embed.min.js^$script,domain=surveyrewardz.com
 @@||panini.com.br/*/Amasty_GdprFrontendUi/
 @@||pantagraph.com^$generichide
+@@||papagan.shop^$xmlhttprequest,stealth=referrer,domain=setplay.shop
 @@||papagiovannipaoloii.altervista.org^$generichide
 @@||paperzonevn.com^$generichide
 @@||papunika.com^$generichide
@@ -12564,8 +12566,6 @@
 @@||precitaj.si^$ghide
 @@||premid.app/ads/ads$xhr,1p
 @@||premid.app^$ghide
-@@||premium-link.ninja/js/blockadblock.js
-@@||premium-link.ninja^$generichide
 @@||premiumvideo.click/player*.php$stealth=referrer
 @@||pressgazette.co.uk^$generichide
 @@||preview.editmysite.com^$stealth=referrer
@@ -13219,6 +13219,7 @@
 @@||s.206ads.com/helper.js$domain=androidauthority.com
 @@||s.206ads.com/js/data/androidauthority.com.js$domain=androidauthority.com
 @@||s.206ads.com/prebid.js$domain=androidauthority.com
+@@||s.amazon-adsystem.com/ima/ima3.js$domain=ondemandkorea.com
 @@||s.aolcdn.com/ads/adsWrapperMSNI.js$domain=outlook.live.com
 @@||s.bstarstatic.com/ogv/subtitle/$stealth=referrer
 @@||s.click.aliexpress.com/deep_link.htm?aff_short_key=$removeparam=aff_short_key
@@ -14041,6 +14042,7 @@
 @@||serving-sys.com^$domain=mylifetime.com
 @@||servustv.com^$ghide
 @@||session.proxy.startpage.com/csp_check$document
+@@||setplay.shop/player/$subdocument,stealth=referrer,domain=hdfilmcehennemi.now
 @@||sexcamdb.com/advert.js
 @@||sexgalaxy.net/wp-content/plugins^
 @@||sexgalaxy.net/wp-content/themes^
@@ -14668,7 +14670,6 @@
 @@||static.criteo.net/js/ld/publishertag.prebid.js|$xhr,domain=dogdrip.net|smsonline.cloud
 @@||static.criteo.net/js/px.js$domain=vladan.fr
 @@||static.criteo.net/js/px.js^$domain=lequipe.fr
-@@||static.criteo.net/js/px.js^$domain=techobest.com
 @@||static.crunchyroll.com/*/player.html$stealth=referrer
 @@||static.crunchyroll.com/config/cx-vilos-ads/crunchyroll-web.json
 @@||static.cz.prg.cmestatic.com/static/cz/shared/js/advert.js
@@ -15189,7 +15190,6 @@
 @@||techniknews.net/data/ads/doubleserve.js
 @@||technode.com/wp-content/plugins/newspack-popups/dist/view.css
 @@||technologyreview.com/*/adsense-
-@@||techobest.com^$generichide
 @@||techobras.com^$stealth=referrer
 @@||techonthenet.com/javascript/advert-min.js
 @@||techperiod.com/wp-content/cache/min/*/wp-content/themes/TechPeriod/js/ads-*.js
@@ -15814,6 +15814,7 @@
 @@||twickets.live/app/assets/resources/languages/core/terms/cookiePolicy/*.json
 @@||twickets.live/assets/resources^
 @@||twimg.twitter.map.fastly.net^$script
+@@||twincdn.com/videos/$media,stealth=referrer,domain=pornmike.com
 @@||twitch.tv^$websocket,permissions
 @@||twitchadvertising.tv/wp-content/uploads/2014/06/header_logo_advertising.png
 @@||twitter.com$domain=bleacherreport.com
