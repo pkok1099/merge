@@ -1,6 +1,6 @@
 ! Title: Network Blocking Rules
-! Updated: 2026-05-09 05:50:21 UTC
-! Total Rules: 50520
+! Updated: 2026-05-10 06:14:15 UTC
+! Total Rules: 50523
 
 # ABP anti-circumvention filter lists
 # Ad-Shield allowlist
@@ -1407,8 +1407,8 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 *$script,3p,denyallow=anycast.me|cloudflare.com|cloudflare.net|consensu.org|consentframework.com|facebook.net|fastly.net|fastlylb.net|fbcdn.net|google.com|googleapis.com|gstatic.com|hcaptcha.com|hwcdn.net|jquery.com|jsdelivr.net|mrf.io|priice.net|sirdata.fr|twitter.com|recaptcha.net|x.com,domain=lebigdata.fr|montjeuturf.net
 *$script,3p,denyallow=apis.google.com,domain=zilla-xr.xyz
 *$script,3p,denyallow=arc.io|bootstrapcdn.com|chatango.com|cloudflare.com|cloudflare.net|disqus.com|disquscdn.com|facebook.net|fastly.net|fastlylb.net|fbcdn.net|google.com|googleapis.com|gstatic.com|hwcdn.net|jquery.com|jsdelivr.net|jwplatform.com|jwpcdn.com|recaptcha.net,domain=ytanime.tv
+*$script,3p,denyallow=b-cdn.net|blazingcdn.net|cdntrex.com|fastly.net|google.com|googleapis.com|gstatic.com|h-cdn.com|stackpathcdn.com,domain=porntrex.com
 *$script,3p,denyallow=bigwarp.io|bootstrapcdn.com|fontawesome.com|gstatic.com|jsdelivr.net,domain=bigwarp.cc
-*$script,3p,denyallow=blazingcdn.net|cdntrex.com|fastly.net|google.com|googleapis.com|gstatic.com|h-cdn.com|stackpathcdn.com,domain=porntrex.com
 *$script,3p,denyallow=blogger.com|bootstrapcdn.com|cloudflare.com|cloudflare.net|gitcdn.link|githack.com|google.com|googleapis.com|gstatic.com|recaptcha.net,domain=wwwfotografgotlin.blogspot.com
 *$script,3p,denyallow=blogger.com|facebook.net|fastlylb.net|fbcdn.net|google.com|googleapis.com|disqus.com|telegram.im|wp.com,domain=9xmovie.*
 *$script,3p,denyallow=bootstrapcdn.com,from=youdbox.*
@@ -14014,6 +14014,7 @@ serially.it#%#//scriptlet('xml-prune', 'xpath(//*[name()="Period"][.//*[name()="
 serialyzadara.cz#%#//scriptlet('remove-attr', 'href', 'a[href][id^="clickfakeplayer"]')
 serienjunkies.de,hna.de,tz.de#%#//scriptlet('trusted-click-element', 'html.cmp-modal-open .cmp-root-container >>> .cmp-button-accept-all')
 serieslatinoamerica.tv$$script[wildcard="*track*atob*ShadowRoot*"][min-length="5000"][max-length="10000"]
+seriezloaded.com.ng#%#//scriptlet('prevent-setTimeout', 'offsetHeight === 0')
 serverssh.net,webcreator-journal.com,tools.halpas.com#%#//scriptlet("prevent-setTimeout", "/offsetParent[\s\S]*?defaultView\.getComputedStyle[\s\S]*?currentStyle\.display\)=='none'/")
 servustv.com#%#//scriptlet('trusted-click-element', 'button[onclick="OneTrust.AllowAll()"]')
 sevdesk.at,sevdesk.de#%#//scriptlet('set-cookie', 'userConsent', 'false')
@@ -29645,6 +29646,7 @@ zw.pl#%#//scriptlet('abort-on-property-write', 'adBlockMessage')
 ||google-analytics.com/ga.js$script,redirect=google-analytics.com/ga.js:5
 ||google-analytics.com/r/collect^$domain=saturn.de|mediamarkt.de
 ||google-analytics.com^
+||google-analytics.com^$3p,image,redirect=1x1.gif,from=daemon-hentai.com
 ||google-analytics.com^$domain=avgle.com
 ||google-analytics.com^$domain=promiflash.de,redirect=nooptext,important
 ||google-analytics.com^$object,redirect=noopjs
@@ -31519,6 +31521,7 @@ zw.pl#%#//scriptlet('abort-on-property-write', 'adBlockMessage')
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$redirect=google-ima.js,domain=hlsfast.com
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$redirect=google-ima.js,domain=ilovegambling.bet
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$redirect=google-ima.js,domain=iwanttfc.com
+||imasdk.googleapis.com/js/sdkloader/ima3.js$redirect=google-ima.js,domain=mnetplus.world
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$redirect=google-ima.js,domain=playerp2p.com
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$redirect=google-ima.js,domain=promobil.de
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$redirect=google-ima.js,domain=radio.*|radio.at|radio.de|radio.dk|radio.es|radio.fr|radio.it|radio.net|radio.pl|radio.pt|radio.se
