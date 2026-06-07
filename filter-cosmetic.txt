@@ -1,6 +1,6 @@
 ! Title: Cosmetic Rules
-! Updated: 2026-06-06 06:32:03 UTC
-! Total Rules: 83521
+! Updated: 2026-06-07 07:07:02 UTC
+! Total Rules: 83511
 
 ###AvisoCookieslaw
 ###BandeauCookie
@@ -1825,6 +1825,7 @@
 ##.insider-opt-in-notification
 ##.instream_ad
 ##.interstitial-ad
+##.is-sp[data-ad]
 ##.j-cookieContainer
 ##.jetblocker-wrapper
 ##.jetblocker_overlay
@@ -2211,7 +2212,6 @@
 ##a[onclick="openAuc();"]
 ##a[style="text-decoration:none;"] > div[style^="border: none; margin: 0px;"]
 ##a[style^="background:transparent url"][style*="html-load.com/"]
-##a[target="_blank"][rel="noopener noreferrer"]:has(> div#container > div.img_container > img[src^="https://asset.ad-shield.cc"])
 ##adfm-ad
 ##amedia-privacybox
 ##amp-ad-exit + div[class*=" "]:has(+ div[aria-hidden="true"] + amp-pixel + amp-pixel)
@@ -2239,10 +2239,6 @@
 ##body > a[attributionsrc*="html-load.com/"]
 ##body > a[href^="https://content-loader.com/"][target="_top"]
 ##body > a[href^="https://html-load.com/"][target="_top"]
-##body > a[href^="https://s.click.aliexpress.com"][target="_blank"][rel="noopener noreferrer"]
-##body > a[href^="https://www.amazon."][href*="tag=adshield"][target="_blank"]
-##body > a[target="_blank"][rel="noopener noreferrer"][href*="html-load.com/"][href*="/0/"]
-##body > a[target="_blank"][rel="noopener noreferrer"][href^="https://"][href*="/player"][href*="/0/"]
 ##body > div#cs_stripe
 ##body > div#dontfoid
 ##body > div#fixedban
@@ -2306,6 +2302,7 @@
 ##div#spot-holder.spot-holder[style="display: block;"]
 ##div.card > div#cbRow.checkbox-row[onclick="startVerify()"]
 ##div.fadeInDown[id$="____equal"][class$="____equal"]
+##div.rendered[id][class*=" "]
 ##div:not([class]) + style + div[class^="img_"] > img[src*="html-load.com/"]
 ##div[class$="player-promo-col"]
 ##div[class*="cookiesAnnounce-"]
@@ -2342,9 +2339,16 @@
 ##div[data-testid="prism-taboola"]
 ##div[data-type="_mgwidget"]
 ##div[id][data-google-av-itpl]
+##div[id][style$="height:    90px; overflow: hidden;"]
+##div[id][style$="height:   250px;"]
+##div[id][style$="width:    300px; height:    600px;"]
 ##div[id][style$="width:336px; max-width:100%; min-height:250px; background-color:transparent;"]
 ##div[id][style="border: 0pt; width:    970px; height:    90px;"]
+##div[id][style="max-height: 180px; text-align: center; margin: 0px auto; display: block;"]
+##div[id][style="width:   100%;height:   280px;overflow:hidden"]
+##div[id][style^="min-width: 300px; min-height: 250px"]
 ##div[id][style^="position: fixed; inset: 0px; z-index: 2147483647; background: black"][style*="opacity: 0.01"]
+##div[id][style^="width:    3"][style*="height:    1"]
 ##div[id^="M"][id*="Composite"]
 ##div[id^="img_"] > div[id^="img_"][style="width: auto;"]
 ##div[id^="img_"] > div[style$="text-decoration:none;width:300px;"]
@@ -2427,7 +2431,9 @@
 ##embed[width="728"][height="90"]
 ##figure.movie-detail-banner div[style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; z-index: 999; cursor: pointer;"]
 ##form[aria-label="Sign up for newsletter: Daily Briefing"]
+##form[id][action*="html-load.com/feed/"][target="_blank"]
 ##gwd-google-ad
+##head:has(> meta[name="as-inventory-frame-listener-added"]) + body[marginwidth="0"][marginheight="0"] > a[target="_blank"][rel="noopener noreferrer"][href*=".html-load.com/"]
 ##head:has(> meta[name="as-tester-handler-added"]) + body > a[target="_blank"][rel="noopener noreferrer"][href*=".html-load.com/"]
 ##html > body > div.container > form#unsubscribe-form[onsubmit="submitUnsubscribeForm(event)"]
 ##html > body > div.container.m-p > #checkbox-window.checkbox-window
@@ -2506,6 +2512,7 @@
 ##img[width="728"][height="90"]
 ##ins.adsbygoogle[data-ad-slot]
 ##ins[class^="img_"][style^="display:inline-block;"]
+##ins[id][data-anchor-status]
 ##link + div[class^="img_"][style="width: 300px; height: 250px;"]
 ##link + style + script + a[href*="html-load.com/"]
 ##link[rel="stylesheet"][href*="html-load.com/"] + script + script + div[id^="img_"]
@@ -25862,12 +25869,12 @@ filecr.com#@#.text_ad
 filecr.com#@#ins.adsbygoogle[data-ad-client]
 filecr.com#@#ins.adsbygoogle[data-ad-slot]
 filecrate.store##+js(aeld, click, !adShown)
-filecrypt.*###jh34[onmousedown^="var lsj = this;loc.href="]
 filecrypt.*##+js(ra, onclick, button[id][onclick*=".html"])
 filecrypt.*##+js(rmnt, script, '{delete window[')
 filecrypt.*##+js(rmnt, script, localStorage.setItem)
 filecrypt.*##+js(set, isAdblock, false)
 filecrypt.*##^script:has-text('{delete window[')
+filecrypt.*##button[onclick*=".href="]
 filecrypt.*##button[onclick*="duckier.com"]
 filecrypt.*##div:has(> [href*=".html"])
 filecrypt.*##div[class^="fiIItheadblock"]
@@ -39007,6 +39014,7 @@ jpfbs.com,daicel.com##.js-gdpr-popup
 jpg.fr,rajapack.*##+js(trusted-click-element, button.js-ot-deny, , 1000)
 jpg2png.com,gtaweb.eu#$#body div.fc-message-root { display: none !important; }
 jpg6.su##iframe[src^="//go.gsrv.dev/"]
+jpix.ad.jp,smahospital.jp,nipponsteel.com##.p-gdpr
 jpl.nasa.gov##div[itemprop="articleBody"] > div.BaseGrid + div.BaseGrid:has(> div.relative > div.BlockNewsletterSignup)
 jpl.nasa.gov##div[itemprop="articleBody"] > div.BaseGrid + div.BaseGrid:has(> div.relative > div.bg-gray-light > a[href="/newsletter-signup/"])
 jpnn.com##+js(aopr, document.oncopy)
@@ -65446,7 +65454,6 @@ sm.ms##.wwads_abp
 sm.news##div[id^="bar"]
 sm.news#?#div:not([class="col-home"]):has(> div[id^="bar"])
 sma.de###tracker-banner
-smahospital.jp,nipponsteel.com##.p-gdpr
 smailpro.com##+js(set, adsbygoogle_ama_fc_has_run, true)
 smailpro.com##.ads-sidebar-right
 smailpro.com##.flex > div.text-center:has(> div > ins.adsbygoogle)
@@ -79295,6 +79302,7 @@ web.facebook.com,www.facebook.com###seo_pivots ~ div > div[style^="max-width"] >
 web.facebook.com,www.facebook.com##+js(json-edit, ..data.viewer..nodes.*[?.__typename=="AdsSideFeedUnit"])
 web.facebook.com,www.facebook.com##+js(json-edit, ..node[?.*.__typename=="SponsoredData"])
 web.facebook.com,www.facebook.com##+js(json-edit, ..node[?.__typename=="MarketplaceFeedAdStory"])
+web.facebook.com,www.facebook.com##+js(json-edit, ..nodes.*[?.sponsored_data])
 web.facebook.com,www.facebook.com##+js(json-prune, require.0.3.0.__bbox.require.[].3.1.__bbox.result.data.marketplace_search.feed_units.edges.[-].node.story.sponsored_data.ad_id)
 web.facebook.com,www.facebook.com##+js(json-prune, require.0.3.0.__bbox.require.[].3.1.__bbox.result.data.node, require.0.3.0.__bbox.require.[].3.1.__bbox.result.data.node.story.sponsored_data.ad_id)
 web.facebook.com,www.facebook.com##+js(json-prune, require.0.3.0.__bbox.require.[].3.1.__bbox.result.data.serpResponse.results.edges.[-].relay_rendering_strategy.view_model.story.sponsored_data.ad_id)
@@ -83438,26 +83446,13 @@ zzup.com##iframe[src^="/ad"][src$=".php"]
 zzztube.com,me-gay.com,gaysuperman.com##.mobile-random
 zzztube.com,videoporn.tube##.b-random-column
 ~apkmirror.com,~tuxpi.com##.adslot:not(.text-ad)
-~bing.com,~dogdrip.net,~smsonline.cloud##*:not(body) > a[href^="https://content-loader.com/"]
-~bing.com,~dogdrip.net,~smsonline.cloud##*:not(body) > a[href^="https://html-load.com/"]
 ~bing.com,~dogdrip.net,~smsonline.cloud##amp-img[height="   120"]
 ~bing.com,~dogdrip.net,~smsonline.cloud##amp-img[width="   300"]
 ~bing.com,~dogdrip.net,~smsonline.cloud##amp-img[width="   336"]
 ~bing.com,~dogdrip.net,~smsonline.cloud##div[id][class][style^="display"][style*="hidden"][style*="width:   "]
-~bing.com,~dogdrip.net,~smsonline.cloud##div[id^="img_"] > button.gCloseButton
-~bing.com,~dogdrip.net,~smsonline.cloud##div[id^="img_"][data-google-query-id]
-~bing.com,~dogdrip.net,~smsonline.cloud##div[id^="img_"][style$="2147483647; justify-content: center;"]
-~bing.com,~dogdrip.net,~smsonline.cloud##div[id^="img_"][style$="display: block;"]
-~bing.com,~dogdrip.net,~smsonline.cloud##div[id^="img_"][style$="height: 90px;"]
-~bing.com,~dogdrip.net,~smsonline.cloud##div[id^="img_"][style$="max-height:100px;background-color:rgba(128, 128, 128, 0.4);"]
-~bing.com,~dogdrip.net,~smsonline.cloud##div[id^="img_"][style^="margin:0;padding:0;display:block;position:fixed;left:0;"]
-~bing.com,~dogdrip.net,~smsonline.cloud##div[id^="img_"][style^="width: 100%;height: 90px;position: fixed;bottom: 0px;left: 0px;z-index:"]
 ~bing.com,~dogdrip.net,~smsonline.cloud##div[style^="height:    250px; width:    300px;"]
 ~bing.com,~dogdrip.net,~smsonline.cloud##div[style^="width:    160px; height:    600px; margin: 0px auto; min-width: 160px; min-height: 600px;"]
 ~bing.com,~dogdrip.net,~smsonline.cloud##div[style^="width:    300px; height:    250px;"]
-~bing.com,~dogdrip.net,~smsonline.cloud##html[class^="img_"][amp4ads=""][i-amphtml-layout=""][i-amphtml-no-boilerplate=""][amp-version="2502032353000"]
-~bing.com,~dogdrip.net,~smsonline.cloud##html[class^="img_"][amp4ads=""][i-amphtml-layout=""][i-amphtml-no-boilerplate=""][amp-version="2507172035000"]
-~bing.com,~dogdrip.net,~smsonline.cloud##html[class^="img_"][amp4ads=""][i-amphtml-layout=""][i-amphtml-no-boilerplate=""][amp-version="2509031727000"]
 ~bing.com,~dogdrip.net,~smsonline.cloud##img[height="   250"][width="   300"]
 ~bing.com,~dogdrip.net,~smsonline.cloud##img[height="   90"][width="   728"]
 ~bing.com,~dogdrip.net,~smsonline.cloud##ins[id][style*="--gn-ov-ad-height"]
@@ -83470,8 +83465,6 @@ zzztube.com,videoporn.tube##.b-random-column
 ~connect.deezer.com,deezer.com###modal_login
 ~diary.ru##a[href^="http://www.liveinternet.ru/stat/"]
 ~dogdrip.net,~smsonline.clou##ins[id][style*="--gn-ov-ad-height"]
-~dogdrip.net,~smsonline.cloud##*:not(body) > a[href^="https://content-loader.com/player"]
-~dogdrip.net,~smsonline.cloud##*:not(body) > a[href^="https://html-load.com/player"]
 ~dogdrip.net,~smsonline.cloud##amp-img[height="   120"]
 ~dogdrip.net,~smsonline.cloud##amp-img[width="   300"]
 ~dogdrip.net,~smsonline.cloud##amp-img[width="   336"]
@@ -83488,9 +83481,6 @@ zzztube.com,videoporn.tube##.b-random-column
 ~dogdrip.net,~smsonline.cloud##div[style^="height:    250px; width:    300px;"]
 ~dogdrip.net,~smsonline.cloud##div[style^="width:    160px; height:    600px; margin: 0px auto; min-width: 160px; min-height: 600px;"]
 ~dogdrip.net,~smsonline.cloud##div[style^="width:    300px; height:    250px;"]
-~dogdrip.net,~smsonline.cloud##html[class^="img_"][amp4ads=""][i-amphtml-layout=""][i-amphtml-no-boilerplate=""][amp-version="2502032353000"]
-~dogdrip.net,~smsonline.cloud##html[class^="img_"][amp4ads=""][i-amphtml-layout=""][i-amphtml-no-boilerplate=""][amp-version="2507172035000"]
-~dogdrip.net,~smsonline.cloud##html[class^="img_"][amp4ads=""][i-amphtml-layout=""][i-amphtml-no-boilerplate=""][amp-version="2509031727000"]
 ~dogdrip.net,~smsonline.cloud##img[height="   250"][width="   300"]
 ~dogdrip.net,~smsonline.cloud##img[height="   90"][width="   728"]
 ~dogdrip.net,~smsonline.cloud##ins[style$="height:    90px; width:    728px;"]
