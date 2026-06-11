@@ -1,6 +1,6 @@
 ! Title: Exception Rules
-! Updated: 2026-06-10 07:10:42 UTC
-! Total Rules: 17190
+! Updated: 2026-06-11 08:05:38 UTC
+! Total Rules: 17191
 
 @@#.banner%20ad.$image,domain=dokuo666.blog98.fc2.com
 @@$cookie=__gads,domain=godstoryinfo.com|laweducationinfo.com|rsgames.xyz|vichitrainfo.com
@@ -104,7 +104,6 @@
 @@*$script,1p,domain=starkroboticsfrc.com|sinonimos.de|antonimos.de|quesignifi.ca|tiktokrealtime.com|tiktokcounter.net|tpayr.xyz|poqzn.xyz|ashrfd.xyz|rezsx.xyz|tryzt.xyz|ashrff.xyz|rezst.xyz|dawenet.com|erzar.xyz|waezm.xyz|waezg.xyz|blackwoodacademy.org|cryptednews.space|vivuq.com|swgop.com|vbnmll.com|telcoinfo.online|dshytb.com
 @@*$script,domain=th.gl,denyallow=amazon-adsystem.com|doubleclick.net|googlesyndication.com|avplayer.com|aniview.com|id5-sync.com
 @@*$script,frame,xhr,1p,domain=ytlarge.com
-@@*$script,from=tvasports.ca,to=micro.rubiconproject.com|securepubads.g.doubleclick.net
 @@*$script,third-party,domain=embedme.*|filemoon.*|finfang.*|hellnaw.*|moonembed.*|z12z0vla.*|fmoonembed.*
 @@*$script,xhr,1p,domain=digikey.co.za|digikey.cn|digikey.ee|digikey.at|digikey.be|digikey.bg|digikey.cz|digikey.dk|digikey.fi|digikey.fr|digikey.de|digikey.gr|digikey.hu|digikey.ie|digikey.it|digikey.lv|digikey.lt|digikey.lu|digikey.nl|digikey.no|digikey.pl|digikey.pt|digikey.ro|digikey.sk|digikey.si|digikey.es|digikey.se|digikey.ch|digikey.co.uk|digikey.co.il|digikey.com.mx|digikey.ca|digikey.com.br|digikey.co.nz|digikey.com.au|digikey.co.th|digikey.tw|digikey.kr|digikey.sg|digikey.ph|digikey.my|digikey.jp|digikey.in|digikey.hk|digikey.com
 @@*$script,xhr,ghide,domain=uptoplay.net
@@ -166,6 +165,7 @@
 @@.m3u8$stealth=referrer,domain=iyf.tv
 @@.m3u8$stealth=referrer,domain=streameeeeee.site|videostr.net
 @@.m3u8$stealth=referrer,domain=yfsp.tv
+@@.m3u8$third-party,xmlhttprequest,stealth=referrer,domain=player.videasy.*|cineby.at|cineplay.to|fmovies.nz
 @@.m3u8$xmlhttprequest,stealth=referrer,domain=megaup.site
 @@.m4s$domain=crunchyroll.com,stealth=referrer
 @@.mp4$domain=crunchyroll.com,stealth=referrer
@@ -200,6 +200,7 @@
 @@/*/*-*/*.png$stealth=referrer,xmlhttprequest,domain=dbx.molystream.org
 @@/*/*-*/*.png$stealth=referrer,xmlhttprequest,domain=dizibox.tv
 @@/*/*.jpg$stealth=referrer,image,domain=mangarawjp.com
+@@/*/*=|$third-party,xmlhttprequest,media,stealth=referrer,domain=player.videasy.*|cineby.at|cineplay.to|fmovies.nz
 @@//*.xvideos.com^$domain=xvideos.com
 @@//aka-cdn-ns.adtechus.com/images/$domain=cinemablend.com
 @@/1.gif?$image,1p,domain=kanjiku.net
@@ -421,7 +422,6 @@
 @@/media/*/js/adblock_detector.js$domain=eska.pl|eskarock.pl|voxfm.pl|vibefm.pl|radiosupernova.pl
 @@/mma/?t$image,domain=newsblaze.com
 @@/mono.m3u8$stealth=referrer
-@@/mp4$media,stealth=referrer,domain=player.videasy.net|player.videasy.to
 @@/nbc-ad*.js$domain=notebookcheck-hu.com|notebookcheck.com|notebookcheck.net|notebookcheck.org|notebookcheck.biz|notebookcheck.it|notebookcheck.nl|notebookcheck.info|notebookcheck-tr.com|notebookcheck.se|notebookcheck-ru.com
 @@/otBannerSdk.js$domain=saal-digital.de
 @@/owa/service.svc$document
@@ -587,7 +587,7 @@
 @@player*.html$frame,1p,domain=slreamplay.*
 @@playlist/*/load-playlist$xmlhttprequest,stealth=referrer,domain=crackstreamer.net|1stream.eu|streameast.app|thecrackstreams.live|buffstreams.app
 @@prebid.js$script,domain=bisnis.adigenius.com|adikdrive.my.id
-@@q=$xmlhttprequest,stealth=referrer,domain=player.videasy.net|player.videasy.to
+@@q=$xmlhttprequest,stealth=referrer,domain=player.videasy.*|cineby.at|cineplay.to|fmovies.nz
 @@safari-extension://com.adguard.safari-$document
 @@safari-extension://com.adguard.safaridev-$document
 @@seg-*.*$domain=rapid-cloud.co,xmlhttprequest,stealth=referrer
@@ -1790,6 +1790,7 @@
 @@||api.channel.io/front/$stealth=useragent,domain=laftel.net
 @@||api.chartbeat.com^$script,domain=financialpost.com|wcpo.com|couriermail.com.au|betabeat.com
 @@||api.clerk.io/v*/log/click?$domain=fjellandhandel.no
+@@||api.clerk.io/v*/log/click?payload=$domain=ringo.no
 @@||api.cognitive.microsofttranslator.com/translate?
 @@||api.coinmarketcap.com/$xhr,domain=unblock.net
 @@||api.commercecloud.salesforce.com^$stealth=3p-auth,domain=steelseries.com
@@ -4397,7 +4398,6 @@
 @@||cnet.com/*/video-player/*/lib/tracking/comscore/comscore.streaming.*.min.js
 @@||cnn.com/.element/apps/cvp/3.0/cfg/spider/cnn/expansion/ad_policy.xml$xhr,domain=cnn.com
 @@||cnn.com^*/ad_policy.xml$domain=cnn.com
-@@||cnnamador.com/player/stats.php$image,1p
 @@||cnnturk.com/action/media^
 @@||cnpack.org^$stealth=dpi
 @@||cnprint.org^$generichide
@@ -5610,7 +5610,6 @@
 @@||earnbtc.pw/jse/vld.ads?ad_ids=$script,domain=earnbtc.pw
 @@||eastprodcdn.azureedge.net/bundles/*velaro$script
 @@||easy-firmware.com/templates/default/html/en/assets/js/fingerprint2.min.js$script,1p
-@@||easy.worldthunder.net^$xmlhttprequest,stealth=referrer,domain=player.videasy.net|player.videasy.to
 @@||easyfun.gg/js/adscroll.js$script,1p
 @@||easypari.fr^*/sitestat.js
 @@||easyreaders.site^$ghide
@@ -5913,6 +5912,7 @@
 @@||evkur.com.tr^$stealth=dpi
 @@||evolution-x.org^$generichide
 @@||evowars.io/ads.js
+@@||ewybory.eu^$generichide
 @@||ex.co/player/$script,domain=standard.co.uk
 @@||exacttarget.com^$domain=pub.msg.smbc.co.jp
 @@||exali.de/static/theme/assets/js/cookieBanner.js
@@ -10214,6 +10214,7 @@
 @@||media.bnd.com/mistats/finalizestats.js
 @@||media.bnd.com/mistats/micb.js
 @@||media.bnd.com/mistats/products/escenic_s_code.js
+@@||media.ethicalads.io/media/client/ethicalads.min.js$script,domain=decompiler.com
 @@||media.fastclick.net/iab^$domain=youronlinechoices.com
 @@||media.ft.com/j/optimost-$domain=ft.com
 @@||media.kaspersky.com/tracking/omniture/s_code_single_suite.js
@@ -11537,7 +11538,7 @@
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=forum.release-apk.com,stealth,important
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=fox.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=freebinchecker.com
-@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=freebnbcoin.com|exotictgirl.blogspot.com|bospedia.com|rockmods.net|aiimsneetshortnotes.com|arabseed.onl|miuiku.com|flash-firmware.blogspot.com|rumahit.id|romfirmware.com|gsmfirmware.net|akwam.*|fc-lc.com|fc.lc|note1s.com|ipacrack.com|traffic1s.com|adnews.me|ak4eg.*|xn--mgba7fjn.*|akw.to|ak4ar.*|nguyenvanbao.com|ak.sv|indokontraktor.com|shahid4u.*|neosatsu.com|shahidd4u.net|shahiid4u.net|shahid-4u.*|shaid4u.day|shahhid4u.cam|shhahid4u.*|sshahid4u.*|sshahid4u.day|sd4u.net|shah4u.*|shah4u.day|shaahed4u.net|shiid4u.day|shhahhed4u.net|shahheid4u.net|shaheiid4u.net
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=freebnbcoin.com|exotictgirl.blogspot.com|bospedia.com|rockmods.net|aiimsneetshortnotes.com|arabseed.onl|miuiku.com|flash-firmware.blogspot.com|rumahit.id|romfirmware.com|gsmfirmware.net|akwam.*|fc-lc.com|fc.lc|note1s.com|ipacrack.com|traffic1s.com|adnews.me|ak4eg.*|xn--mgba7fjn.*|akw.to|ak4ar.*|nguyenvanbao.com|ak.sv|indokontraktor.com|shahid4u.*|neosatsu.com|shahidd4u.net|shahiid4u.net|shahid-4u.*|shaid4u.day|shahhid4u.cam|shhahid4u.*|sshahid4u.*|sshahid4u.day|sd4u.net|shah4u.*|shah4u.day|shaahed4u.net|shiid4u.day|shhahhed4u.net|shahheid4u.net|shaheiid4u.net|odiadance.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=freecoursesonline.me
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=freeiptvgen.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=freemagazines.top
