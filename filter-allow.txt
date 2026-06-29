@@ -1,5 +1,5 @@
 ! Title: Exception Rules
-! Updated: 2026-06-28 07:03:45 UTC
+! Updated: 2026-06-29 08:14:48 UTC
 ! Total Rules: 17264
 
 @@#.banner%20ad.$image,domain=dokuo666.blog98.fc2.com
@@ -378,6 +378,7 @@
 @@/hls/*.m3u8$stealth=referrer
 @@/hls/*.ts$stealth=referrer,domain=techclips.net
 @@/hls2/*$xmlhttprequest,stealth=referrer,domain=vidora.stream
+@@/hls2/*.m3u8?t=$stealth=referrer
 @@/home.php$popup,domain=mlwbd.*
 @@/https?:\/\/(www\.)?sonixgvn\.net\/.{1,15}\.js$/$script,~third-party,domain=sonixgvn.net
 @@/iframe.php$stealth=referrer,domain=dizilla.*|dizillahd.*|asyawatch.com
@@ -10818,7 +10819,9 @@
 @@||naiadsystems.com/*/hls/live$domain=pornhub.com|pornhub.org|pornhub.net
 @@||nakanohito.jp^*/bi.js$domain=kenko-tokina.co.jp
 @@||nakanohito.jp^*/bi.js$domain=myna.go.jp
-@@||nam.veta.naver.com/vas$xmlhttprequest,domain=chzzk.naver.com
+@@||nam.veta.naver.com/call|$xmlhttprequest,domain=chzzk.naver.com
+@@||nam.veta.naver.com/gfp$xmlhttprequest,domain=chzzk.naver.com
+@@||nam.veta.naver.com/vas|$xmlhttprequest,domain=chzzk.naver.com
 @@||names.org^$cname
 @@||namu.wiki^$stealth=push|location|webrtc|flash
 @@||nano.org/_app/chunks/CookieConsent-*.js
@@ -11451,6 +11454,7 @@
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=apkhosto.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=apkmirror.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=apkmirror.com,stealth=referrer
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=app.khaddavi.net
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=apps2app.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=arahdrive.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=arhplyrics.in
@@ -11673,6 +11677,7 @@
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=kisahdunia.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=kissanime.com.ru|kissanime.co|kissanime.sx|kissanime.is
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=kitguru.net
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=kodibeginner.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=kpopflac.xyz
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=kukuo.tw
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=laptrinhx.com
@@ -13386,7 +13391,6 @@
 @@||ryuukoi.web.id^$ghide
 @@||rzd.ru^$stealth=3p-cookie
 @@||s*-prod.glasgowlive.co.uk/*/prebid.js$domain=glasgowlive.co.uk
-@@||s*.*.xyz/hls2/*.m3u8$stealth=referrer
 @@||s*.5playdisk.ru/*/files/*.apk$stealth=ip
 @@||s*.adform.net/banners/scripts/adx.js$domain=delfi.ee
 @@||s*.bpwco.com^$xmlhttprequest,stealth=referrer
@@ -14690,7 +14694,6 @@
 @@||ssl.p.jwpcdn.com/player/v/8.36.2/googima.js$script,domain=vidara.to|vidara.so|xca.cymru|vindaz.shop
 @@||ssl.p.jwpcdn.com^$domain=bdsmstreak.com
 @@||ssl.pstatic.net/static.news/mnews/resources/*/js/generated/statistics_jquery.js
-@@||ssl.pstatic.net/tveta/libs/glad/prod/$script,xmlhttprequest,domain=chzzk.naver.com
 @@||ssl.sdcdn.com/cms/ads/*$domain=stardoll.com
 @@||sso.*.gov.vn^$stealth=dpi
 @@||sso.adperfect.com/client_authentication/?$elemhide,jsinject,extension,xmlhttprequest
@@ -16383,9 +16386,6 @@
 @@||verticalscope-com.videoplayerhub.com/galleryplayer.js$domain=avsforum.com
 @@||verticalscope-com.videoplayerhub.com/galleryplayer.js$domain=forums.watchuseek.com
 @@||verticalscope-com.videoplayerhub.com/galleryplayer.js$domain=overclock.net
-@@||veta.naver.com/call|$xmlhttprequest,domain=chzzk.naver.com
-@@||veta.naver.com/gfp$xmlhttprequest,domain=chzzk.naver.com
-@@||veta.naver.com/vas|$xmlhttprequest,domain=chzzk.naver.com
 @@||veuclips.com^$generichide
 @@||vev.*^$ghide
 @@||vfsglobal.*/*/Track/*^$stealth=donottrack|useragent|ip
