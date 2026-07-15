@@ -1,6 +1,6 @@
 ! Title: Exception Rules
-! Updated: 2026-07-14 05:33:12 UTC
-! Total Rules: 17301
+! Updated: 2026-07-15 05:33:53 UTC
+! Total Rules: 17303
 
 @@#.banner%20ad.$image,domain=dokuo666.blog98.fc2.com
 @@$cookie=__gads,domain=godstoryinfo.com|laweducationinfo.com|rsgames.xyz|vichitrainfo.com
@@ -157,6 +157,7 @@
 @@.it/rcs_data-tracking/v*/distro/openx/gazzetta/openx_async.js$domain=gazzetta.it
 @@.jpg#$domain=ktmx.pro
 @@.jpg#$domain=marketmovers.it
+@@.jpg|$third-party,xmlhttprequest,stealth=referrer,domain=embdmstrplayer.com
 @@.js$xmlhttprequest,stealth=referrer,domain=roxiestreams.*
 @@.js?fcd=true$domain=snopes.com
 @@.m3u8$domain=rapid-cloud.co,xmlhttprequest,stealth=referrer
@@ -175,6 +176,7 @@
 @@.mp4$media,stealth=referrer,domain=api.animeuzayi.com
 @@.mp4$media,stealth=referrer,domain=sekai.one
 @@.mp4?headers$media,stealth=referrer,domain=vidlink.pro
+@@.my.salesforce-setup.com/_ui/common/config/field/*/d?id=*&type=
 @@.myvi.ru^$stealth
 @@.net/click-$domain=bradsdeals.com|coupons.com|dealigg.com|dealnews.com|goodsearch.com|groupon.com|hotukdeals.com|moneysavingexpert.com|offers.com|retailmenot.com|slickdeals.net
 @@.online/premiumtv/*.php$subdocument,xmlhttprequest,stealth=referrer
@@ -243,6 +245,7 @@
 @@/^https:\/\/[a-z]\.pussyspace\.(?:com|net)\/sb\/t\/\d{6,8}\/\d\/\d\/w:300\/t\d{1,2}-enh\/(?:[0-9a-z]+-)*[0-9a-z]+\.jpg$/$image,~third-party,domain=pussyspace.com|pussyspace.net
 @@/^https:\/\/ads\.host-cdn\.net\/\w+\.js\?\w+$/$script,3p,to=ads.host-cdn.net,from=maxstream.video|uprot.net
 @@/^https:\/\/imgbb.zip\/ib\/[a-z0-9]{15}_[0-9]{10}\.jpg$/$image,third-party,stealth=referrer,domain=rogmovies.*|xprimehub.*|vegamovies.*|vegamovies.navy|rogmovies.cv|xprimehub.bond
+@@/^https:\/\/mshale\.com\/[a-f0-9]{8}\/[a-zA-Z0-9]+$/$match-case,stealth=referrer|searchqueries
 @@/^https:\/\/st\.pussyspace\.(?:com|net)\/upload\/cat\.image\/[_3a-z]{2,16}\.jpg$/$image,1p,domain=pussyspace.com|pussyspace.net
 @@/^https:\/\/st\.pussyspace\.(?:com|net)\/upload\/poster_img_url\/par\/c3Rhci9[%0-9A-Za-z]{16,32}&size_width\/par\/160\/l\.jpg$/$image,1p,domain=pussyspace.com|pussyspace.net
 @@/^https:\/\/st\.pussyspace\.(?:com|net)\/upload\/poster_img_url\/par\/c3Rhci9[%0-9A-Za-z]{16,32}&size_width\/par\/160\/l\.jpg$/$image,~third-party,domain=pussyspace.com|pussyspace.net
@@ -420,8 +423,8 @@
 @@/libs/advertisement.js$domain=getfree.co.in|bagi.co.in|aztecafaucet.space|multifaucet.org|dogestar.website|claimbits.io|i-bits.io|gobits.io|faucet.shorterall.com|simplyfaucet.xyz|tv3.lv
 @@/libs/advertisement.js?ad_ids=*&show_ad=$script,1p
 @@/libs/advertisement1.js$domain=faucet.shorterall.com
-@@/live/*.m3u8$xmlhttprequest,stealth=referrer,domain=weakspell.to|weakspell.org|streamocean.online|weakspell.to
-@@/live/*.ts|$xmlhttprequest,stealth=referrer,domain=weakspell.org|streamocean.online
+@@/live/*.m3u8$xmlhttprequest,stealth=referrer,domain=weakspell.to|weakspell.org|weakspell.to
+@@/live/*.ts|$xmlhttprequest,stealth=referrer,domain=weakspell.org
 @@/live/*/*jpeg|$xmlhttprequest,stealth=referrer,domain=weakspell.org|weakspell.to
 @@/loader.min.js$xhr,script,domain=dogdrip.net|smsonline.cloud
 @@/mangakakalot/*$stealth=referrer,image,domain=mangakakalot.com
@@ -469,7 +472,6 @@
 @@/sources-with-title?title=*&mediaType=$third-party,xmlhttprequest,stealth=referrer
 @@/speedtest/upload.php$domain=speedtest.net
 @@/static/js/video/videojs-contrib-ads.min.js$domain=telegraf.rs|telegraf.tv
-@@/static/stream*.png$stealth=referrer,xmlhttprequest,domain=streamocean.online|streambtw.com
 @@/storage/js/*.js$~third-party,domain=wowmail.app|inipulsa.my.id|anon.tools|s-nr.dk
 @@/stream$xmlhttprequest,stealth=referrer,domain=kwik.cx
 @@/stream/*/*.m3u8$xmlhttprequest,domain=faselhd.cafe
@@ -1753,6 +1755,7 @@
 @@||api-public.stoerungsauskunft.de/api$stealth=3p-auth
 @@||api-secure.solvemedia.com^$frame
 @@||api.*.commercetools.com^$stealth=3p-auth,domain=qt.io
+@@||api.*/seed?mediaId=$third-party,xmlhttprequest,stealth=referrer
 @@||api.1plus1.video^$stealth=referrer|ip
 @@||api.adguard-dns.io/api/
 @@||api.adinplay.com/$xmlhttprequest,domain=taming.io|tamming.io
@@ -1987,7 +1990,6 @@
 @@||api.vhx.com^$stealth=3p-auth
 @@||api.vhx.tv^$stealth=3p-auth
 @@||api.viddler.com/api/v*/viddler.videos.getPlaybackDetails.json$stealth=referrer
-@@||api.wingsdatabase.com/seed?mediaId=$third-party,xmlhttprequest,stealth=referrer
 @@||api.workwise.io/cookieConsents$domain=workwise.io
 @@||api.youla.io^$stealth=referrer
 @@||api2.branch.io/v1/open$domain=flickplay.co
@@ -4363,7 +4365,6 @@
 @@||cmp.dmgmediaprivacy.co.uk/cmp/*/index.js$script,domain=metro.co.uk
 @@||cmp.dmgmediaprivacy.co.uk/gdpr/*$xhr,domain=gbnews.uk
 @@||cmp.dmgmediaprivacy.co.uk^$domain=dailymail.co.uk
-@@||cmp.dmgmediaprivacy.co.uk^$domain=inews.co.uk
 @@||cmp.dmgmediaprivacy.co.uk^$domain=metro.co.uk
 @@||cmp.dmgmediaprivacy.co.uk^$script,domain=dailymail.co.uk|dailymail.com
 @@||cmp.dmgmediaprivacy.co.uk^$xhr,domain=metro.co.uk
@@ -11806,7 +11807,6 @@
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=photopea.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=plagiarismdetector.net
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=playertv.net
-@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=pmsarkarijob.com|tallgalls.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=podu.me
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=popcrush.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=populistpress.com|canadafreepress.com|thelibertydaily.com|writerscafe.org|populist.press|welovetrump.com|grammarist.com|protrumpnews.com|gamersheroes.com|letocard.fr|100percentfedup.com|thepalmierireport.com|kresy.pl|beforeitsnews.com|thepatriotjournal.com|phoenixnewtimes.com|thepoke.co.uk|comicallyincorrect.com|thegatewaypundit.com|toptenz.net
@@ -12092,6 +12092,7 @@
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xmlhttprequest,domain=howkteam.vn
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xmlhttprequest,domain=ibmmainframes.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xmlhttprequest,domain=incredibox.com
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xmlhttprequest,domain=indratranslations.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xmlhttprequest,domain=infinityscans.xyz|infinityscans.net
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xmlhttprequest,domain=isi7.net
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xmlhttprequest,domain=japangaysex.com
@@ -12167,6 +12168,7 @@
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub$domain=fuucdayo.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-$domain=uploadg.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?ord=$xhr,domain=sbs.com.au
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?ts=$script,domain=indratranslations.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js^$domain=linkneverdie.net
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js^$domain=sportshub.to
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js^$domain=watchfaces.be
@@ -12448,7 +12450,6 @@
 @@||pips.taboola.com^|$xmlhttprequest,domain=lephoceen.fr
 @@||pisupisu.pl/*/adsbygoogle.js
 @@||pisupisu.pl^$generichide
-@@||pitbullofficial.com^$generichide
 @@||piwik.discoursehosting.net^$domain=forum.matomo.org
 @@||piwik.pro/images/
 @@||piwik.windit.de/piwik.js$domain=livespotting.tv
@@ -14940,6 +14941,7 @@
 @@||static.doubleclick.net/instream/ad_status.js$xhr,domain=sportnews.to
 @@||static.doubleclick.net/instream/ad_status.js$xmlhttprequest,domain=exeygo.com
 @@||static.doubleclick.net/instream/ad_status.js$xmlhttprequest,domain=softinfo.ro
+@@||static.doubleclick.net/pcs/click?ts=$image,domain=indratranslations.com
 @@||static.doubleclick.net^$xmlhttprequest,domain=sgxnifty.org|comexlive.org|dowfutures.org
 @@||static.drogerienatura.pl/*/gdpr.js
 @@||static.editor.naver.net/static/$stealth=referrer
@@ -15889,7 +15891,6 @@
 @@||trafficmanager.anyclip.com^$domain=zerotackle.com
 @@||trafico.prensaiberica.es/adm/min/pb_wrapper/$script,domain=sport.es
 @@||trafico.prensaiberica.es/adm/min/pb_wrapper/pbwrapper.js$script,domain=elperiodicodearagon.com
-@@||trailblaze.my.salesforce-setup.com/_ui/common/config/field/*/d?id=*&type=
 @@||trailrunnermag.com^$stealth=dpi
 @@||tranimeci.com^$ghide
 @@||tranimeizle.*^$generichide
@@ -17051,6 +17052,7 @@
 @@||x.*.tk/*/caxi.m3u8$stealth=referrer
 @@||x.*.tk/*/strmrdr.m3u8$stealth=referrer
 @@||x.*.xyz/*/xox_*.jpeg$stealth=referrer
+@@||x.com^$stealth=flash|java
 @@||x.kinja-static.com/assets/packaged-js/runtime~trackers.*.js$domain=clickhole.com|lifehacker.com|splinternews.com|avclub.com|deadspin.com|gizmodo.com|jalopnik.com|jezebel.com|kotaku.com|qz.com|theinventory.com|theonion.com|theroot.com|thetakeout.com
 @@||x.kinja-static.com/assets/packaged-js/trackers$script
 @@||x.kinja-static.com/assets/packaged-js/trackers.*.js$domain=clickhole.com|lifehacker.com|splinternews.com|avclub.com|deadspin.com|gizmodo.com|jalopnik.com|jezebel.com|kotaku.com|qz.com|theinventory.com|theonion.com|theroot.com|thetakeout.com
