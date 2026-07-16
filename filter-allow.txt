@@ -1,12 +1,13 @@
 ! Title: Exception Rules
-! Updated: 2026-07-15 05:33:53 UTC
-! Total Rules: 17303
+! Updated: 2026-07-16 05:42:21 UTC
+! Total Rules: 17313
 
 @@#.banner%20ad.$image,domain=dokuo666.blog98.fc2.com
 @@$cookie=__gads,domain=godstoryinfo.com|laweducationinfo.com|rsgames.xyz|vichitrainfo.com
 @@$csp=worker-src 'none',domain=uptostream.com
 @@$generichide,domain=stfly.cc
 @@$image,stealth=referrer,domain=comix.to
+@@$popup,domain=datanodes.to,third-party
 @@$stealth=useragent,app=top.rootu.lampa
 @@$subdocument,third-party,stealth=referrer,domain=sport.starsites.fun
 @@$subdocument,xmlhttprequest,stealth=referrer|flash,domain=pichive.online
@@ -175,6 +176,7 @@
 @@.mp4$domain=crunchyroll.com,stealth=referrer
 @@.mp4$media,stealth=referrer,domain=api.animeuzayi.com
 @@.mp4$media,stealth=referrer,domain=sekai.one
+@@.mp4%3Fsign%3$third-party,media,stealth=referrer,domain=vidrock.ru
 @@.mp4?headers$media,stealth=referrer,domain=vidlink.pro
 @@.my.salesforce-setup.com/_ui/common/config/field/*/d?id=*&type=
 @@.myvi.ru^$stealth
@@ -462,6 +464,7 @@
 @@/scripts/adv.js$domain=securenetsystems.net
 @@/sd0embed/*$subdocument,stealth=referrer
 @@/securepubads.$domain=lifestyle.bg|news.bg|topsport.bg,badfilter
+@@/series/*$third-party,xmlhttprequest,stealth=referrer,domain=vidbasic.live
 @@/showads.$~third-party,domain=rte.ie
 @@/signup.php?mode=async&action=show_security_code$image,1p
 @@/site=*/size=*/viewid=$domain=morningstar.in
@@ -5924,6 +5927,7 @@
 @@||etools.ch^$ghide
 @@||ets2.gr/js/siropu/am/ads.min.js
 @@||etsy.com/your/shops/$document
+@@||etsy.com^$stealth=useragent
 @@||eu-tools.dmarcmanager.app/js/widgetry.js$stealth=referrer
 @@||eu-tools.dmarcmanager.app/widgets/$stealth=referrer
 @@||eu.spgo.io/*~/aaa$~image
@@ -9481,6 +9485,7 @@
 @@||js.monitor.azure.com/scripts/*/ms.analytics-web-*.min.js$domain=mediastream.microsoft.com
 @@||js.monitor.azure.com/scripts/*/ms.analytics-web-*.min.js$domain=remoteassistance.support.services.microsoft.com
 @@||js.monitor.azure.com/scripts/*/ms.analytics-web-*.min.js$domain=skype.com
+@@||js.monitor.azure.com/scripts/c/ms.analytics-web-4.min.js$domain=visualstudio.microsoft.com
 @@||js.monitor.azure.com/scripts/c/ms.jsll-*.min.js$domain=visualstudio.microsoft.com
 @@||js.monitor.azure.com/scripts/c/ms.jsll-3.min.js$domain=contentsafety.cognitive.azure.com
 @@||js.monitor.azure.com^$app=com.microsoft.office.officehubrow
@@ -9627,6 +9632,7 @@
 @@||knightlobby.com/js/$script,1p
 @@||knightlobby.com^$ghide
 @@||knshow.com^$ghide
+@@||kobieta.wp.pl^$ehide,badfilter
 @@||kobieta.wp.pl^$elemhide,badfilter
 @@||kodi-tutorials.uk^$generichide
 @@||kodik.info/*?translations=$domain=animestars.org,stealth=referrer
@@ -11776,6 +11782,7 @@
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=ncaa.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=needrom.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=net4you.xyz|day4news.com|businessnews-nigeria.com|loiz.store|gooltok.com|wisw.online|abda3.xyz|elbadr.xyz|lelmak.com
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=net77.cc
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=news-724.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=next-episode.net
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=nihongo-pro.com
@@ -12108,6 +12115,7 @@
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xmlhttprequest,domain=mtg-print.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xmlhttprequest,domain=nohat.cc|psd.world|png.is
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xmlhttprequest,domain=now.gg|now.us
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xmlhttprequest,domain=nypost.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xmlhttprequest,domain=odsluchane.eu
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xmlhttprequest,domain=offidocs.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xmlhttprequest,domain=ovabee.com
@@ -12974,6 +12982,7 @@
 @@||publiekeomroep.nl/data/script/cconsent$domain=vpro.nl
 @@||publisher.adservice.com^$document
 @@||publisher.linkvertise.com/cdn/linkvertise.js$script,domain=uploadmall.com
+@@||publishers.monetag.com/assets/favicon-16x16.png$domain=net77.cc
 @@||puch-ersatzteile.at/static/*/Magento_GoogleAnalytics/*$script,1p
 @@||pudelek.pl^$generichide
 @@||puhutv.com^$ghide
@@ -15447,6 +15456,7 @@
 @@||techdracula.com^$generichide
 @@||techdracula.com^$ghide
 @@||techieway.blogspot.com^$generichide
+@@||techlab-cdn.com/e/$domain=sephora.com
 @@||technical-service.net/api?$domain=n-tv.de|vip.de|rtl.de
 @@||techniknews.net/data/ads/doubleserve.js
 @@||technode.com/wp-content/plugins/newspack-popups/dist/view.css
