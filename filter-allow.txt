@@ -1,12 +1,13 @@
 ! Title: Exception Rules
-! Updated: 2026-08-14 04:49:04 UTC
-! Total Rules: 17390
+! Updated: 2026-08-15 03:40:18 UTC
+! Total Rules: 17397
 
 @@#.banner%20ad.$image,domain=dokuo666.blog98.fc2.com
 @@$cookie=__gads,domain=godstoryinfo.com|laweducationinfo.com|rsgames.xyz|vichitrainfo.com
 @@$csp=worker-src 'none',domain=uptostream.com
 @@$generichide,domain=stfly.cc
 @@$image,stealth=referrer,domain=comix.to
+@@$media,stealth=referrer,domain=fakitonye.shop
 @@$popup,domain=datanodes.to,third-party
 @@$stealth=useragent,app=top.rootu.lampa
 @@$subdocument,third-party,stealth=referrer,domain=sport.starsites.fun
@@ -247,7 +248,7 @@
 @@/^https:\/\/[a-z]\.pussyspace\.(?:com|net)\/sb\/t\/\d{6,8}\/\d\/\d\/w:300\/t\d{1,2}-enh\/(?:[0-9a-z]+-)*[0-9a-z]+\.jpg$/$image,1p,domain=pussyspace.com|pussyspace.net
 @@/^https:\/\/[a-z]\.pussyspace\.(?:com|net)\/sb\/t\/\d{6,8}\/\d\/\d\/w:300\/t\d{1,2}-enh\/(?:[0-9a-z]+-)*[0-9a-z]+\.jpg$/$image,~third-party,domain=pussyspace.com|pussyspace.net
 @@/^https:\/\/ads\.host-cdn\.net\/\w+\.js\?\w+$/$script,3p,to=ads.host-cdn.net,from=maxstream.video|uprot.net
-@@/^https:\/\/imgbb.zip\/ib\/[a-z0-9]{15}_[0-9]{10}\.jpg$/$image,third-party,stealth=referrer,domain=rogmovies.*|xprimehub.*|vegamovies.*|1vegamovies.cc|rogmovies.cv|xprimehub.bond
+@@/^https:\/\/imgbb.zip\/ib\/[a-z0-9]{15}_[0-9]{10}\.jpg$/$image,third-party,stealth=referrer,domain=rogmovies.*|xprimehub.*|vegamovies.*|new1.vegamovies.futbol|rogmovies.cv|xprimehub.bond
 @@/^https:\/\/mshale\.com\/[a-f0-9]{8}\/[a-zA-Z0-9]+$/$match-case,stealth=referrer|searchqueries
 @@/^https:\/\/st\.pussyspace\.(?:com|net)\/upload\/cat\.image\/[_3a-z]{2,16}\.jpg$/$image,1p,domain=pussyspace.com|pussyspace.net
 @@/^https:\/\/st\.pussyspace\.(?:com|net)\/upload\/poster_img_url\/par\/c3Rhci9[%0-9A-Za-z]{16,32}&size_width\/par\/160\/l\.jpg$/$image,1p,domain=pussyspace.com|pussyspace.net
@@ -433,7 +434,8 @@
 @@/mangakakalot/*$stealth=referrer,image,domain=mangakakalot.com
 @@/master.m3u8|$xmlhttprequest,third-party,stealth=referrer,domain=nxsha.app
 @@/media/*$stealth=referrer,media,domain=fsharetv.cc
-@@/media/*/js/adblock_detector.js$domain=eska.pl|eskarock.pl|voxfm.pl|vibefm.pl|radiosupernova.pl
+@@/media/*/js/adblock_detector.js$domain=eska.pl|eskarock.pl|voxfm.pl|vibefm.pl|radiosupernova.pl|se.pl
+@@/media/*/zpr_footer/js/pageear.js$domain=eska.pl|eskarock.pl|voxfm.pl|vibefm.pl|radiosupernova.pl|se.pl
 @@/mma/?t$image,domain=newsblaze.com
 @@/mono.m3u8$stealth=referrer
 @@/mp4/*$media,stealth=referrer,domain=player.videasy.*|cineby.*|cineplay.to|fmovies.*|www.fmovies.gd|vidking.net
@@ -1892,6 +1894,7 @@
 @@||api.exoclick.com^$domain=exoclick.com
 @@||api.flocktory.com/v2/loader.js$domain=citilink.ru
 @@||api.foodthinkers.com/commercetools/graphql$stealth=3p-auth,domain=sageappliances.com
+@@||api.fpadserver.com/image$domain=coinfalo.com
 @@||api.fw.tv/embed/$domain=filmibeat.com
 @@||api.geetest.com^$stealth
 @@||api.getgrover.com/api/*/user$stealth=3p-auth
@@ -4538,6 +4541,7 @@
 @@||coinzillatag.com/lib/display.js$script,domain=ad-doge.com
 @@||coinzillatag.com/lib/display.js$script,domain=viefaucet.com
 @@||coinzillatag.com/lib/displayf.js$xmlhttprequest,domain=simplebits.io
+@@||coinzillatag.com/lib/fp.js$domain=coinfalo.com
 @@||coinzillatag.com/lib/fp.js$script,domain=bitcotasks.com
 @@||cokcok.stream/play/$stealth=referrer
 @@||colendilabs.com^$stealth=dpi
@@ -5570,6 +5574,7 @@
 @@||download.com/ad-
 @@||download.hr/module/detector/adsbygoogle.js
 @@||download.inventivetalent.org/external/adfly/make.php
+@@||download.liteapks.dev/*^token=$stealth=referrer
 @@||download.megaup.net/*.js$~third-party
 @@||download.megaup.net^$script,1p
 @@||download.pixelexperience.org^$generichide
@@ -6092,6 +6097,7 @@
 @@||facetoshi.live^$generichide
 @@||faiusr.com^$image,stealth=referrer
 @@||fak.xxx^$stealth=ip
+@@||fakitonye.shop/player/$stealth=referrer,domain=hdabla.net
 @@||fakt.pl/*&srcc=ucs$removeparam
 @@||fakt.pl/*?utm_source=$removeparam
 @@||fakt.pl/*srcc=$stealth=referrer
@@ -7295,6 +7301,7 @@
 @@||googleads.g.doubleclick.net/pagead/html/*/zrt_lookup_inhead_fy2021.html$domain=alliptvlinks.com
 @@||googleads.g.doubleclick.net/pagead/html/*/zrt_lookup_nohtml_fy2021.html$domain=alliptvlinks.com
 @@||googleads.g.doubleclick.net/pagead/html/r*/zrt_lookup.html$domain=camera.aeonax.com
+@@||googleads.g.doubleclick.net/pagead/id$domain=coinfalo.com
 @@||googleads.g.doubleclick.net/pagead/id$domain=gbfile.com|blog.miuiflash.com|freewebcart.com|hentaiseason.com|mimundodonghua.com|obutecodanet.ig.com.br|freegogpcgames.com|softwaretotal.net|ozabc.com|kopetnews.id|chimicamo.org|sampledrive.in|freeshib.biz|freecoursesites.com|infinityblogger.in|hulnews.top|routech.ro|jugomobile.com|hiseku.com|bithub.win|mytechroad.com|38.242.198.170|enrology.in|jojo-themes.net|freedidi.com|gezegenforum.com|eoydo.com|crunchyscan.fr|boainformacao.com.br|manyakan.com|moviessquad.com|dengeki-plusv2.xyz|bullfrag.com|epainfo.pl|ypojie.com|cinemakottaga.*|baominh.tech|sachiepvien.net|rucore.net|downloadcursos.org|jkmeng.cn|trgamestudio.com|audiobooks4soul.com|vfxdownload.net|electomania.es|captionsgram.com|scat.gold|techymedies.com|tutcourse.com|alilove.pl|sqlserveregitimleri.com|tokuvn.com|texture-packs.com|pcwarehub.com|pbarecap.ph|tinyppt.com|5.182.211.129|cyfostreams.com|htstreaming.com|routech.ro|freewebcart.com|shineads.in|watchmdh.to|ssf-co.com|downloadtutorials.net|win10.vn|legaartis.pl|legendary-rt-textures.xyz|globfone.com|blogging-techies.com|privatemoviez.*|conhecimentolivre.net|downloadcursos.top|persianhive.com|eductin.com|cronachedellacampania.it|applexgen.com|desktophut.com|pinsystem.co.uk|grafixfather.com|globalrph.com|cyberdefensemagazine.com|vectogravic.com|teknotaci.com|onlinecoursebay.com|scrapywar.com|worldpremiumware.online|godmods.com|nulljungle.com|filecr.com|merkulov.design|cardiagn.com|nulleb.com|filecr.com|temi.pl|sudya-dredd.ru|tech-story.net|udemycoursesfree.me|livenewsnow.com|tokuvn.com|animeidhentai.com|dvdgayporn.com|dotadostube.com|taradinhos.com|dvdgayonline.com|hotxfans.com|iimanga.com|phanmemmaytinh.net|bingotingo.com|freepreset.net|superembeds.com|animekhor.xyz|nullphpscript.com|gocmod.com|techsmoon.com|comentariodetexto.com|myqqjd.com|windowslite.net|dvdporngay.com|karanpc.com|weadown.com|apkdelisi.net|an1me.nl|nurparatodos.com.ar|brasilsimulatormods.com|taodung.com|ipamod.com|francescopelliccia.it|fapdrop.com|azoranov.com|daotranslate.com|androjungle.com|filegajah.com|seriesperu.com|megafire.net|justpaste.top|whats-on-netflix.com|shineads.org|gplastra.com|kuponigo.com|step-tech.pl|thecustomrom.com|plc247.com|uiiumovie.*|tavernadequadrinhos.com.br|teksnologi.com|cronachesalerno.it|porninblack.com|emptycode.in|tech5s.co|jadukit.com|7xm.xyz|serverbd247.com|cctvwiki.com|luciferdonghua.in|filmefarsi.com|pinsystem.co.uk|tuxnews.it|sonixgvn.net|downfile.site|daotranslate.com|kisahdunia.com|mixrootmods.com|javindo.eu.org|snlookup.com|vietnoiket.com|plc4me.com|qcscertification.com|ezaudiobookforsoul.com|apkdelisi.net|tromcap.com|trigonevo.com|drivers.plus|tuktukcinma.com|hanopatch4u.com|trafficexwire.com|sezium.com|mtgphil.org
 @@||googleads.g.doubleclick.net/pagead/id$domain=guides.magicgameworld.com
 @@||googleads.g.doubleclick.net/pagead/id$domain=rscripts.net
@@ -7964,6 +7971,7 @@
 @@||googletagmanager.com/gtm.js$script,redirect-rule,domain=corsair.com
 @@||googletagmanager.com/gtm.js$script,redirect-rule,domain=jumbo.cl
 @@||googletagmanager.com/gtm.js$script,redirect-rule,domain=lingvolive.com
+@@||googletagmanager.com/gtm.js$script,redirect-rule,domain=lyssna.com
 @@||googletagmanager.com/gtm.js$script,redirect-rule,domain=mf-realty.jp
 @@||googletagmanager.com/gtm.js$script,redirect-rule,domain=oxylabs.io
 @@||googletagmanager.com/gtm.js$script,redirect-rule,domain=rocketnews24.com
@@ -9955,6 +9963,7 @@
 @@||live.mrf.io/statics/marfeel/prebid-worker/webworker.js$domain=simpleflying.com
 @@||live.primis.tech/content/$domain=manchestereveningnews.co.uk
 @@||live.primis.tech/live/liveVideo.php$domain=manchestereveningnews.co.uk
+@@||live.primis.tech/live/liveView.php$domain=akinator.com
 @@||live.primis.tech/live/liveView.php$domain=manchestereveningnews.co.uk
 @@||live.primis.tech/live/liveView.php$xmlhttprequest,domain=work.ink
 @@||live.statscore.com^$stealth=referrer,domain=polsatsport.pl
@@ -10499,7 +10508,6 @@
 @@||mghubcdn.com^$stealth=referrer,domain=mangafox.fun
 @@||mgkomik.com^$generichide
 @@||mgln.ai/e/$media,domain=open.spotify.com
-@@||mgnet.xyz/default/public/assets/*.js
 @@||mgpm.macaotourism.gov.mo^$stealth=ip
 @@||mgr.consensu.org/v*/sibbo-cmp-atresplayer-web.js$domain=atresplayer.com
 @@||mgr.consensu.org^$domain=adslzone.net
@@ -10605,7 +10613,6 @@
 @@||mlwbd.to^$generichide
 @@||mm-syringe.com^$domain=spin.com
 @@||mm-syringe.com^$script,domain=mysanantonio.com
-@@||mmacore.tv^$generichide
 @@||mmcref.pl/?$removeparam=utm_medium
 @@||mmo-population.com^$generichide
 @@||mmo69.com^$generichide
@@ -11469,6 +11476,7 @@
 @@||pagead2.googlesyndication.com/pagead/$domain=mtgcardsmith.com
 @@||pagead2.googlesyndication.com/pagead/$domain=nationalpost.com
 @@||pagead2.googlesyndication.com/pagead/$domain=noice.com
+@@||pagead2.googlesyndication.com/pagead/$domain=tempmail.ninja
 @@||pagead2.googlesyndication.com/pagead/$domain=themarker.com
 @@||pagead2.googlesyndication.com/pagead/$script,domain=fplstatistics.com
 @@||pagead2.googlesyndication.com/pagead/$script,domain=safelinkunited.blogspot.com
@@ -11610,6 +11618,7 @@
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=cnxxx.org
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=codingnepalweb.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=coin-free.com
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=coinfalo.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=convert.guru
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=coolsoft.altervista.org
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=copyseeker.net
@@ -11813,7 +11822,6 @@
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=mix957gr.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=mixrootmod.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=mixrootmods.com
-@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=mmacore.tv
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=mmsmasala.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=mmsmasala27.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=mobile-tracker-free.com
@@ -12743,7 +12751,6 @@
 @@||popads.net/favicon-16x16.png$domain=ask4porn.cc|hornyhill.com
 @@||popads.net/favicon-16x16.png$domain=hornyhill.se
 @@||popads.net/js/adblock.js$script,xhr,domain=smartkhabrinews.com
-@@||popads.net/pop.js$domain=videobin.co,important
 @@||popcornflix.com^$generichide
 @@||popcorntv.it^$generichide
 @@||popeater.com/traffic/?$script,domain=popeater.com
@@ -14585,7 +14592,6 @@
 @@||smslisten.com^$generichide
 @@||smsnumbersonline.com^$generichide
 @@||smsonline.cloud^$generichide
-@@||smsreceiveonline.com^$generichide
 @@||smstome.com^$generichide
 @@||smutty.com/openx/ad.js
 @@||sn.dplayer*.site/iframe.php$stealth=referrer
@@ -17032,6 +17038,7 @@
 @@||workers.dev/*.txt$stealth=referrer
 @@||workers.dev/*/file2/$xmlhttprequest,stealth=referrer
 @@||workers.dev/?url=*&referer=$stealth=referrer
+@@||workers.dev/media-proxy?$xmlhttprequest,stealth=referrer,domain=cinemove.cc
 @@||workers.dev^$xmlhttprequest,third-party,stealth=referrer,domain=cinelove.live|netplayz.top
 @@||world-sms.org/get-ad/$xhr,1p
 @@||world4.eu/wp-content/plugins/ad-inserter-pro/images/ads.png
