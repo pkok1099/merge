@@ -1,6 +1,6 @@
 ! Title: Exception Rules
-! Updated: 2026-08-17 03:51:26 UTC
-! Total Rules: 17397
+! Updated: 2026-08-18 03:45:41 UTC
+! Total Rules: 17399
 
 @@#.banner%20ad.$image,domain=dokuo666.blog98.fc2.com
 @@$cookie=__gads,domain=godstoryinfo.com|laweducationinfo.com|rsgames.xyz|vichitrainfo.com
@@ -179,6 +179,7 @@
 @@.mp4$media,stealth=referrer,domain=sekai.one
 @@.mp4%3Fsign%3$third-party,media,stealth=referrer,domain=vidrock.ru
 @@.mp4?$media,stealth=referrer,domain=vidlink.pro
+@@.mp4?sign=$media,stealth=referrer,domain=themoviebox.org|movieboxonline.net|123moviesfree.club|netnaija.film|m2box.org|netfilm.world
 @@.my.salesforce-setup.com/_ui/common/config/field/*/d?id=*&type=
 @@.myvi.ru^$stealth
 @@.net/click-$domain=bradsdeals.com|coupons.com|dealigg.com|dealnews.com|goodsearch.com|groupon.com|hotukdeals.com|moneysavingexpert.com|offers.com|retailmenot.com|slickdeals.net
@@ -248,7 +249,7 @@
 @@/^https:\/\/[a-z]\.pussyspace\.(?:com|net)\/sb\/t\/\d{6,8}\/\d\/\d\/w:300\/t\d{1,2}-enh\/(?:[0-9a-z]+-)*[0-9a-z]+\.jpg$/$image,1p,domain=pussyspace.com|pussyspace.net
 @@/^https:\/\/[a-z]\.pussyspace\.(?:com|net)\/sb\/t\/\d{6,8}\/\d\/\d\/w:300\/t\d{1,2}-enh\/(?:[0-9a-z]+-)*[0-9a-z]+\.jpg$/$image,~third-party,domain=pussyspace.com|pussyspace.net
 @@/^https:\/\/ads\.host-cdn\.net\/\w+\.js\?\w+$/$script,3p,to=ads.host-cdn.net,from=maxstream.video|uprot.net
-@@/^https:\/\/imgbb.zip\/ib\/[a-z0-9]{15}_[0-9]{10}\.jpg$/$image,third-party,stealth=referrer,domain=rogmovies.*|xprimehub.*|vegamovies.*|new1.vegamovies.futbol|rogmovies.cv|xprimehub.bond
+@@/^https:\/\/imgbb.zip\/ib\/[a-z0-9]{15}_[0-9]{10}\.jpg$/$image,third-party,stealth=referrer,domain=rogmovies.*|xprimehub.*|vegamovies.*|new2.vegamovies.futbol|rogmovies.cv|xprimehub.bond
 @@/^https:\/\/mshale\.com\/[a-f0-9]{8}\/[a-zA-Z0-9]+$/$match-case,stealth=referrer|searchqueries
 @@/^https:\/\/st\.pussyspace\.(?:com|net)\/upload\/cat\.image\/[_3a-z]{2,16}\.jpg$/$image,1p,domain=pussyspace.com|pussyspace.net
 @@/^https:\/\/st\.pussyspace\.(?:com|net)\/upload\/poster_img_url\/par\/c3Rhci9[%0-9A-Za-z]{16,32}&size_width\/par\/160\/l\.jpg$/$image,1p,domain=pussyspace.com|pussyspace.net
@@ -306,7 +307,6 @@
 @@/beacon.js$domain=ww1.canada.com
 @@/blockadblock.$script,domain=blockadblock.com
 @@/blog.php$popup,domain=mlwbd.*
-@@/bt/*.mp4?sign=$media,stealth=referrer,domain=themoviebox.org|movieboxonline.net|123moviesfree.club|netnaija.film
 @@/captcha/captcha.php$image,1p,domain=filecrypt.cc|filecrypt.co
 @@/cdn*/premium*/tracks-$xmlhttprequest,script,stealth=referrer
 @@/cdn-cgi/challenge-platform/*/orchestrate/jsch/v$domain=kat.*
@@ -1832,7 +1832,7 @@
 @@||api.channel.io/front/$stealth=useragent,domain=laftel.net
 @@||api.chartbeat.com^$script,domain=financialpost.com|wcpo.com|couriermail.com.au|betabeat.com
 @@||api.clerk.io/v*/log/$domain=apotera.no
-@@||api.clerk.io/v*/log/$domain=avxperten.at|avxperten.be|avxperten.com|avxperten.cy|avxperten.cz|avxperten.de|avxperten.dk|avxperten.ee|avxperten.es|avxperten.fi|avxperten.fr|avxperten.gr|avxperten.hr|avxperten.hu|avxperten.it|avxperten.lt|avxperten.lu|avxperten.lv|avxperten.nl|avxperten.no|avxperten.pl|avxperten.pt|avxperten.ro|avxperten.se|avxperten.si|avxperten.sk
+@@||api.clerk.io/v*/log/$domain=avxperten.at|avxperten.be|avxperten.com|avxperten.cy|avxperten.cz|avxperten.de|avxperten.dk|avxperten.ee|avxperten.es|avxperten.fi|avxperten.fr|avxperten.gr|avxperten.hr|avxperten.hu|avxperten.it|avxperten.lt|avxperten.lu|avxperten.lv|avxperten.nl|avxperten.no|avxperten.pl|avxperten.pt|avxperten.ro|avxperten.se|avxperten.si|avxperten.sk|brukas.no
 @@||api.clerk.io/v*/log/$domain=industrivarer.no
 @@||api.clerk.io/v*/log/$domain=jaktdepotet.no
 @@||api.clerk.io/v*/log/click?$domain=fjellandhandel.no
@@ -3233,7 +3233,7 @@
 @@||cdn.cizgifilmlerizle.com/cizgi/*.mp4^$popup
 @@||cdn.clarip.com^$stealth=useragent,domain=jcrew.com
 @@||cdn.clerk.io/clerk.js$domain=apotera.no
-@@||cdn.clerk.io/clerk.js$domain=avxperten.at|avxperten.be|avxperten.com|avxperten.cy|avxperten.cz|avxperten.de|avxperten.dk|avxperten.ee|avxperten.es|avxperten.fi|avxperten.fr|avxperten.gr|avxperten.hr|avxperten.hu|avxperten.it|avxperten.lt|avxperten.lu|avxperten.lv|avxperten.nl|avxperten.no|avxperten.pl|avxperten.pt|avxperten.ro|avxperten.se|avxperten.si|avxperten.sk
+@@||cdn.clerk.io/clerk.js$domain=avxperten.at|avxperten.be|avxperten.com|avxperten.cy|avxperten.cz|avxperten.de|avxperten.dk|avxperten.ee|avxperten.es|avxperten.fi|avxperten.fr|avxperten.gr|avxperten.hr|avxperten.hu|avxperten.it|avxperten.lt|avxperten.lu|avxperten.lv|avxperten.nl|avxperten.no|avxperten.pl|avxperten.pt|avxperten.ro|avxperten.se|avxperten.si|avxperten.sk|brukas.no
 @@||cdn.clerk.io/clerk.js$domain=batteribyen.dk|batterionline.no|batterionline.se
 @@||cdn.clerk.io/clerk.js$domain=dehardloopwinkel.nl
 @@||cdn.clerk.io/clerk.js$domain=fjellandhandel.no
@@ -3304,6 +3304,7 @@
 @@||cdn.cookielaw.org/consent/*.json$domain=fotbollskanalen.se
 @@||cdn.cookielaw.org/consent/*.json$domain=healthline.com
 @@||cdn.cookielaw.org/consent/*.json$domain=ign.com
+@@||cdn.cookielaw.org/consent/*.json$domain=instyle.com
 @@||cdn.cookielaw.org/consent/*.json$domain=investinglive.com
 @@||cdn.cookielaw.org/consent/*.json$domain=lasestrellas.tv|televisa.com
 @@||cdn.cookielaw.org/consent/*.json$domain=metacritic.com
@@ -6115,6 +6116,7 @@
 @@||faq-widget.nakanohito.jp/faqwidget.js$domain=keio-passport.co.jp
 @@||faq.subaru.jp^$stealth=dpi
 @@||faq.viewcard.co.jp^$stealth=dpi
+@@||farfarout.org/farfarout-api/$xmlhttprequest,stealth=referrer
 @@||fark.com/js/$1p,script
 @@||farmeramania.de^$ghide
 @@||farsondigitalwatercams.com^$ghide
@@ -14585,7 +14587,7 @@
 @@||sms-anonyme.net^$ghide
 @@||sms-receive-online.com/ajds/ads/*.js
 @@||sms-receive.net/advertisment.js^
-@@||sms24.*^$ghide
+@@||sms24.$ghide
 @@||sms24.me^$generichide
 @@||smscodeonline.com^$generichide
 @@||smscodeonline.com^$ghide
