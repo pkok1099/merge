@@ -1,6 +1,6 @@
 ! Title: Network Blocking Rules
-! Updated: 2026-08-28 15:06:21 UTC
-! Total Rules: 51971
+! Updated: 2026-08-29 09:49:11 UTC
+! Total Rules: 51973
 
 # ABP anti-circumvention filter lists
 # Ad-Shield allowlist
@@ -3695,6 +3695,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /__ub.gif?
 /_a_ta/s/s/*
 /_a_xb/*$xmlhttprequest,domain=m.xcum.com|hellporno.com,redirect-rule=nooptext
+/_ac/s/*.js|$script,1p
 /_adslot/*
 /_ajax/tebilisim.php?
 /_api/tag-manager/api/*/tags/sites/*$xmlhttprequest,domain=boraware.kr
@@ -33241,7 +33242,6 @@ zygomatic.arkadiumarena.com#%#//scriptlet('trusted-replace-argument', 'JSON.pars
 ||interakt.ru^$third-party
 ||interaktiv-net.de^$third-party
 ||intercelestial.com/_ac/
-||intercelestial.com^$csp=script-src 'self' * 'unsafe-inline'
 ||interceptum.com^$third-party
 ||intercom.io/messenger/web/page_view_events
 ||interest.co.nz/core/modules/statistics/statistics.php
@@ -38693,6 +38693,7 @@ zygomatic.arkadiumarena.com#%#//scriptlet('trusted-replace-argument', 'JSON.pars
 ||open.spotify.com^$removeparam=sp_cid
 ||open.spotifycdn.com/cdn/js/retargeting-pixels.*.js
 ||openads.aira.cz^
+||openai-backup.one^$all
 ||openapi.tv.zum.com/logs/ad/
 ||openart.ai/4vu8/
 ||openclick.com^$third-party
@@ -42037,6 +42038,7 @@ zygomatic.arkadiumarena.com#%#//scriptlet('trusted-replace-argument', 'JSON.pars
 ||res.cloudinary.com/*/Ads*/preroll_candy$media,redirect=noopmp3-0.1s
 ||res.heraldm.com/js/acecounter_*.js
 ||res.heraldm.com/js/logcollectscript_*.js
+||res.oa.opera.com^
 ||res.office365.com/footprint/v*/scripts/fp-min.js$script
 ||res.office365.com/footprint/v*/scripts/fpconfig.json$script
 ||res.rbl.ms^$third-party
