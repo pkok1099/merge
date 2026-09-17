@@ -1,6 +1,6 @@
 ! Title: Exception Rules
-! Updated: 2026-09-16 08:21:51 UTC
-! Total Rules: 17527
+! Updated: 2026-09-17 08:28:00 UTC
+! Total Rules: 17534
 
 @@#.banner%20ad.$image,domain=dokuo666.blog98.fc2.com
 @@$cookie=__gads,domain=godstoryinfo.com|laweducationinfo.com|rsgames.xyz|vichitrainfo.com
@@ -448,10 +448,12 @@
 @@/media/*/zpr_footer/js/pageear.js$domain=eska.pl|eskarock.pl|voxfm.pl|vibefm.pl|radiosupernova.pl|se.pl
 @@/mma/?t$image,domain=newsblaze.com
 @@/mono.m3u8$stealth=referrer
+@@/movie/*.json|$xmlhttprequest,stealth=referrer,domain=cinezo.live
 @@/mp4/*$media,stealth=referrer,domain=player.videasy.*|vidking.net
 @@/nbc-ad*.js$domain=notebookcheck-hu.com|notebookcheck.com|notebookcheck.net|notebookcheck.org|notebookcheck.biz|notebookcheck.it|notebookcheck.nl|notebookcheck.info|notebookcheck-tr.com|notebookcheck.se|notebookcheck-ru.com
 @@/otBannerSdk.js$domain=saal-digital.de
 @@/owa/service.svc$document
+@@/p/*/file|$media,stealth=referrer,domain=cinezo.live
 @@/pdc_s_code.js$domain=adobe.com
 @@/piwik-$domain=github.com
 @@/play/*$subdocument,stealth=referrer,domain=animeav1.com
@@ -502,7 +504,7 @@
 @@/stream$xmlhttprequest,stealth=referrer,domain=kwik.cx
 @@/stream/*.m3u8$stealth=referrer,domain=/betanotv\d+\.site$/
 @@/stream/*.m3u8$stealth=referrer,domain=livosports30.live
-@@/stream/*.m3u8$stealth=referrer,domain=sampiyontv2.xyz
+@@/stream/*.m3u8$stealth=referrer,domain=sampiyontv2.xyz|sampiyontv3.xyz
 @@/stream/*/*.m3u8$xmlhttprequest,domain=faselhd.cafe
 @@/stream/*/*.ts$xmlhttprequest,domain=faselhd.cafe
 @@/stylesheet/*$xmlhttprequest,stealth=referrer,domain=gamingzen.xyz
@@ -532,6 +534,7 @@
 @@/video.m3u8$stealth=referrer,domain=missav.live|missav.ws|missav123.com|missav888.com|missav.*|missav01.com
 @@/video/*$media,stealth=referrer,domain=douyin.com
 @@/video/*$xmlhttprequest,third-party,stealth=referrer,domain=cinejoy.to
+@@/video/*.html|$xmlhttprequest,stealth=referrer,domain=cinesrc.st
 @@/video/*/index.m3u8?*&frame_commit=*&mw_pid=*&signature=$stealth=useragent
 @@/videos/*$domain=pornhub.com|pornhub.org|pornhub.net
 @@/videos/*$media,stealth=referrer,domain=allanime.day
@@ -2052,6 +2055,7 @@
 @@||api.vhx.tv^$stealth=3p-auth
 @@||api.viddler.com/api/v*/viddler.videos.getPlaybackDetails.json$stealth=referrer
 @@||api.viduki.net/embed_providers?$stealth=referrer
+@@||api.wehype.com/creator-community/graphql$stealth=3p-auth
 @@||api.workwise.io/cookieConsents$domain=workwise.io
 @@||api.youla.io^$stealth=referrer
 @@||api2.branch.io/v1/open$domain=flickplay.co
@@ -5257,6 +5261,7 @@
 @@||data.service.paypal.com^
 @@||data.simpleupload.net/download/$stealth=referrer
 @@||data.songstats.com/api/v1/analytics/$xhr,1p
+@@||data.tm-awx.com$domain=gloucestershirelive.co.uk
 @@||data.tnlycdn.com^$image,stealth=referrer,domain=toonily.com
 @@||databaseitalia.it^$ghide
 @@||datacloudmail.ru^$domain=cloud.mail.ru,stealth=3p-cookie|referrer
@@ -6233,12 +6238,14 @@
 @@||feliz-web.data.tm-awx.com/smile-web.min.js$domain=liverpoolecho.co.uk|mirror.co.uk|birminghammail.co.uk|dailystar.co.uk|manchestereveningnews.co.uk
 @@||feliz-web.data.tm-awx.com/smile-web.min.js$domain=ok.co.uk
 @@||feliz-web.data.tm-awx.com/smile-web.min.js$domain=themirror.com
+@@||feliz-web.data.tm-awx.com^$domain=cheshire-live.co.uk
 @@||feliz-web.data.tm-awx.com^$domain=football.london
 @@||feliz.data.tm-awx.com/smile-web-v*/$domain=ok.co.uk
 @@||feliz.data.tm-awx.com/smile-web-v2/rootEvent$domain=examinerlive.co.uk
 @@||feliz.data.tm-awx.com/smile-web-v2/rootEvent$domain=liverpoolecho.co.uk|mirror.co.uk|birminghammail.co.uk|dailystar.co.uk|manchestereveningnews.co.uk
 @@||feliz.data.tm-awx.com/smile-web-v2/rootEvent$domain=mirror.co.uk
 @@||feliz.data.tm-awx.com/smile-web-v2/rootEvent$domain=themirror.com
+@@||feliz.data.tm-awx.com^$domain=cheshire-live.co.uk
 @@||feliz.data.tm-awx.com^$domain=football.london
 @@||ferina.xyz/hls2/$stealth=referrer
 @@||ferplast.com/js/filoblu/cookiepolicy/jquery.cookie.js
@@ -6515,7 +6522,6 @@
 @@||frosmo.com/tally-weijl-product-listing/$xhr,domain=tally-weijl.com
 @@||frosmo.com^$image,xmlhttprequest,domain=karkkainen.com
 @@||fruithosted.net/dl/*.mp4
-@@||fruitlab.com/js/pages/dfp.js
 @@||fruitlab.com^$ghide
 @@||fs.azerty.nl/images/content/*728x90
 @@||fs2017mod.com^$generichide
@@ -8177,6 +8183,7 @@
 @@||googlevideo.com/videoplayback/*dclk_video_ads$domain=10play.com.au|10.com.au
 @@||goplay.su^$ghide
 @@||gorillanation.com/js/triggertag.js$domain=playstationlifestyle.net
+@@||goshortlink.site/js/full-page-script.js$domain=todaytvseries1.com
 @@||gostanford.com/common/templates/dfp/dfp-component-template.html
 @@||gostyn24.pl/pl/js/trustmeimadolphin/*.js|$script,1p
 @@||gosuslugi.ru^$stealth=dpi
@@ -9021,7 +9028,7 @@
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=umterps.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=upns.online|upns.xyz|upns.one|isekaitube.cfd|upns.live|javlion.xyz|hlsfast.com|ultrastream.online|streamcasthub.store|w1tv.xyz|cdnstream.top|javboys.upn.one|coflix.upn.one|animeshqip.uns.bio|rpmvid.com|onion.upns.blog|securecdn.shop|embed4me.com|jhdanime.com|strp2p.com|playeranimewatch.pl|bigbuttshubvideos.com|rpmvip.com|rpmstream.live|upns.pro|4meplayer.pro|seekplays.com|easyvidplayer.com|flixcdn.cyou
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=uptostream.com
-@@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=urochsunloath.com|35volitantplimsoles5.com|antecoxalbobbing1010.com|cyamidpulverulence530.com|guidon40hyporadius9.com|housecardsummerbutton.com|un-block-voe.net|voeunblk.com|voeunbl0ck.com|voeunblock2.com|voeunblock.com|voe-unblock.*|voe.sx|phenomenalityuniform.com|kathleenmemberhistory.com|paulkitchendark.com|edwardarriveoften.com|lukecomparetwo.com|kennethofficialitem.com|jamiesamewalk.com|johntryopen.com|morganoperationface.com|jayservicestuff.com|heatherdiscussionwhen.com|robertplacespace.com|alleneconomicmatter.com|josephseveralconcern.com|donaldlineelse.com|bethshouldercan.com|lisatrialidea.com|jessicaglassauthor.com|evelynthankregion.com|lorimuchbenefit.com|susanhavekeep.com|thomasalthoughhear.com|zacharycollectionmight.com|richardstorehalf.com|kimberlyonlocal.com|toddpartneranimal.com|jamessoundcost.com|brittneystandardwestern.com|sandratableother.com|robertordercharacter.com|maxfinishseveral.com|alejandrocenturyoil.com|heatherwholeinvolve.com|kristiesoundsimply.com|adrianmissionminute.com|nathanfromsubject.com|jennifercertaindevelopment.com|richardsignfish.com|sarahnewspaperbeat.com|diananatureforeign.com|jonathansociallike.com|mariatheserepublican.com|johnalwayssame.com|kellywhatcould.com|jilliandescribecompany.com|lukesitturn.com|mikaylaarealike.com|christopheruntilpoint.com|walterprettytheir.com|crystaltreatmenteast.com|lauradaydo.com|lancewhosedifficult.com|dianaavoidthey.com|jefferycontrolmodel.com|jessicaclearout.com|marissasharecareer.com|ianrequireadult.com|charlestoughrace.com|timmaybealready.com|richardquestionbuilding.com|charlessheimprove.com|brittanyaheadnew.com|maryspecialwatch.com|benjaminreducecommunity.com|nicholasbreakplan.com|rebeccasciencestreet.com|johnfullwonder.com
+@@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=urochsunloath.com|35volitantplimsoles5.com|antecoxalbobbing1010.com|cyamidpulverulence530.com|guidon40hyporadius9.com|housecardsummerbutton.com|un-block-voe.net|voeunblk.com|voeunbl0ck.com|voeunblock2.com|voeunblock.com|voe-unblock.*|voe.sx|phenomenalityuniform.com|kathleenmemberhistory.com|paulkitchendark.com|edwardarriveoften.com|lukecomparetwo.com|kennethofficialitem.com|jamiesamewalk.com|johntryopen.com|morganoperationface.com|jayservicestuff.com|heatherdiscussionwhen.com|robertplacespace.com|alleneconomicmatter.com|josephseveralconcern.com|donaldlineelse.com|bethshouldercan.com|lisatrialidea.com|jessicaglassauthor.com|evelynthankregion.com|lorimuchbenefit.com|susanhavekeep.com|thomasalthoughhear.com|zacharycollectionmight.com|richardstorehalf.com|kimberlyonlocal.com|toddpartneranimal.com|jamessoundcost.com|brittneystandardwestern.com|sandratableother.com|robertordercharacter.com|maxfinishseveral.com|alejandrocenturyoil.com|heatherwholeinvolve.com|kristiesoundsimply.com|adrianmissionminute.com|nathanfromsubject.com|jennifercertaindevelopment.com|richardsignfish.com|sarahnewspaperbeat.com|diananatureforeign.com|jonathansociallike.com|mariatheserepublican.com|johnalwayssame.com|kellywhatcould.com|jilliandescribecompany.com|lukesitturn.com|mikaylaarealike.com|christopheruntilpoint.com|walterprettytheir.com|crystaltreatmenteast.com|lauradaydo.com|lancewhosedifficult.com|dianaavoidthey.com|jefferycontrolmodel.com|jessicaclearout.com|marissasharecareer.com|ianrequireadult.com|charlestoughrace.com|timmaybealready.com|richardquestionbuilding.com|charlessheimprove.com|brittanyaheadnew.com|maryspecialwatch.com|benjaminreducecommunity.com|nicholasbreakplan.com|rebeccasciencestreet.com|katherineschoolphone.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=vaughn.live
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=video.capital.it
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=video.corriere.it
@@ -12917,6 +12924,7 @@
 @@||pouvideo.cc^$stealth
 @@||powerad.ai/*/script.js$domain=tvtv.ca
 @@||powerad.ai/pubPls/$domain=tvtv.ca
+@@||poweredby.jads.co/js/$domain=tap4porn.cc
 @@||poweredby.jads.co/js/jads.js$domain=javcl.com
 @@||poweredby.jads.co/js/jads.js$script,domain=im9.eu
 @@||poweredby.jads.co/js/jads2.js$domain=javcl.com
@@ -14100,7 +14108,6 @@
 @@||secure.info.seek.com/b/ss/
 @@||secure.netscope.marktest.pt/netscope-gemius.js$script,domain=jn.pt
 @@||secure.netscope.marktest.pt/netscope-gemius.js$script,domain=tsf.pt
-@@||secure.quantserve.com/quant.js$domain=fruitlab.com
 @@||secure.quantserve.com/quant.js$domain=listeamed.net|gaystream.click
 @@||secure.quantserve.com/quant.js$script,domain=oasport.it
 @@||secure.quantserve.com/quant.js$xmlhttprequest,domain=bigbuttshub2.top|bigbuttshubvideos.com|go.datapendidikan.com|insurance.tempatwisata.pro
@@ -15640,6 +15647,7 @@
 @@||technode.com/wp-content/plugins/newspack-popups/dist/view.css
 @@||technologyreview.com/*/adsense-
 @@||techobras.com^$stealth=referrer
+@@||techolay.net/$stealth=ip
 @@||techonthenet.com/javascript/advert-min.js
 @@||techperiod.com/wp-content/cache/min/*/wp-content/themes/TechPeriod/js/ads-*.js
 @@||techperiod.com^$generichide
@@ -16366,7 +16374,6 @@
 @@||universal-sci.com/detroitchicago/rochester.js$script,1p
 @@||universal.wgplayer.com/tag/$script,domain=atarisalon.com|brightygames.com|sisigames.com|toongo.io|yoho.games
 @@||universal.wgplayer.com/tag/$script,domain=supergames.com
-@@||universeguide.com/abdetect.js
 @@||universoformulas.com^$generichide
 @@||unknowncheats.me/forum/clientscript/adv_teasers.js
 @@||unlockapk.com/*ads.js
