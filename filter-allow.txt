@@ -1,6 +1,6 @@
 ! Title: Exception Rules
-! Updated: 2026-10-28 09:23:55 UTC
-! Total Rules: 17778
+! Updated: 2026-10-29 09:32:56 UTC
+! Total Rules: 17783
 
 @@#.banner%20ad.$image,domain=dokuo666.blog98.fc2.com
 @@$cookie=__gads,domain=godstoryinfo.com|laweducationinfo.com|rsgames.xyz|vichitrainfo.com
@@ -10,6 +10,7 @@
 @@$media,stealth=referrer,domain=fakitonye.shop
 @@$popup,domain=datanodes.to,third-party
 @@$stealth=useragent,app=top.rootu.lampa
+@@$subdocument,stealth=referrer,domain=trend48.st|trend48.*|trendy48.online|trendy48.site|trendy48.*
 @@$subdocument,third-party,stealth=referrer,domain=sport.starsites.fun
 @@$subdocument,xmlhttprequest,stealth=referrer|flash,domain=pichive.online
 @@$third-party,stealth=referrer,method=post,document,domain=aii.sh|srnky.com|clksz.com|lnbz.la
@@ -126,6 +127,7 @@
 @@*$xhr,domain=imagereviser.com|upshrink.com
 @@*$xhr,domain=thehouseofportable.com
 @@*$xhr,image,script,frame,stylesheet,1p,domain=intercelestial.com|teknoasian.com|linegee.net|pahe.plus
+@@*$xhr,method=head,domain=simpmusic.org
 @@*$xhr,method=head|get,domain=app.axenthost.com,3p
 @@*$xhr,redirect-rule,method=head,domain=starkroboticsfrc.com|sinonimos.de|antonimos.de|quesignifi.ca|tiktokrealtime.com|tiktokcounter.net|tpayr.xyz|blackwoodacademy.org|cryptednews.space
 @@*$xhr,script,3p,from=determinemousecshe.shop|ironwinter6m.shop|limiteddollqjc.shop|mindmotion93y8.shop|publicspeed5c.shop|strangernervousql.shop|studyinghuman6js.shop,to=autos|sbs|shop
@@ -403,7 +405,6 @@
 @@/embed/*$frame,domain=underhentai.net
 @@/embed/*$stealth=referrer,subdocument,domain=ldcstreaming.info|sportsonline.*|elixx.xyz|primefoot.ru|lavents.la
 @@/embed/*$subdocument,stealth=referrer,domain=strims.*|daddyhd.com|daddylive.*
-@@/embed/*$subdocument,stealth=referrer,domain=trend48.st
 @@/embed/*$subdocument,stealth=referrer,domain=vidsrc.*|vidsrc.sh|vsembed.ru
 @@/embed/*$third-party,subdocument,stealth=referrer,domain=sportsbite.*
 @@/embed/*.jpg$subdocument,stealth=referrer,domain=hollymoviehd.cc
@@ -3661,7 +3662,7 @@
 @@||cdn.ex.co/transformations/production/$domain=sport24.gr
 @@||cdn.ex.co/transformations/production/$domain=sportday.gr
 @@||cdn.ex.co^$domain=standard.co.uk
-@@||cdn.ex.co^$image,media,domain=standard.co.uk
+@@||cdn.ex.co^$image,media,domain=independent.co.uk|standard.co.uk
 @@||cdn.exmarketplace.com/bidder/video_scripts/video_updated_*.js$domain=tvserial.it
 @@||cdn.fios.tv^$stealth=3p-auth
 @@||cdn.flashtalking.com/*.mp4?cb=$media,domain=safeframe.googlesyndication.com
@@ -6182,7 +6183,7 @@
 @@||evolution-x.org^$generichide
 @@||evowars.io/ads.js
 @@||ewybory.eu^$generichide
-@@||ex.co/player/$script,domain=standard.co.uk
+@@||ex.co/player/$script,domain=independent.co.uk|standard.co.uk
 @@||exacttarget.com^$domain=pub.msg.smbc.co.jp
 @@||exali.de/static/theme/assets/js/cookieBanner.js
 @@||exambd.net^$generichide
@@ -7584,6 +7585,7 @@
 @@||googletagmanager.com/gtag/*$script,domain=redx.com.bd
 @@||googletagmanager.com/gtag/destination$script,domain=musinsa.com
 @@||googletagmanager.com/gtag/js$3p,script,domain=trinket.io
+@@||googletagmanager.com/gtag/js$domain=5ch.io
 @@||googletagmanager.com/gtag/js$domain=av01.tv|javhd.com
 @@||googletagmanager.com/gtag/js$domain=battlestick2.net
 @@||googletagmanager.com/gtag/js$domain=bihann.com|nehannn.com
@@ -12055,6 +12057,7 @@
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=litecoinfaucet.info
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=live-cycling-tiz.stream|cyclingtiz.live|tiz-cycling.tv
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=live-tv-channels.org
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=live-xo.lovable.app
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=live.golato.io
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=live.hitsports.bond
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=livehindustan.com
@@ -16329,6 +16332,7 @@
 @@||truck1.eu/_BANNERS_/client/*
 @@||true-gaming.net/home/wp-content/themes/TrueGaming2021/js/prebid-ads.js
 @@||trueachievements.com^$stealth=useragent
+@@||truefriend.com^$stealth=dpi
 @@||trueid.net^$ghide
 @@||truffeonline.com/js/pubPolicy/ads-prebid.js
 @@||trustarc.mgr.consensu.org/asset/$domain=fortune.com
@@ -17046,6 +17050,7 @@
 @@||waap.ru$jsinject,elemhide,extension
 @@||waaw.tv/js/adv/fuckadblock.js
 @@||waccoe.com^$generichide
+@@||waiting.info/rad_singlepageapp.js^$domain=waiting.info
 @@||wakanim.tv^$script,xhr,1p
 @@||wakatest.keydelivery.northeurope.media.azure.net^$stealth=3p-auth,domain=wakanim.tv
 @@||wakfutemporada2subs.blogspot.com^$generichide
