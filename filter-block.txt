@@ -1,6 +1,6 @@
 ! Title: Network Blocking Rules
-! Updated: 2026-11-27 11:51:45 UTC
-! Total Rules: 57082
+! Updated: 2026-11-28 11:27:03 UTC
+! Total Rules: 57093
 
 # ABP anti-circumvention filter lists
 # Ad-Shield allowlist
@@ -3457,6 +3457,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /^https:\/\/hotels-\d{6}\.eu\//$doc,to=eu|~booking.com
 /^https:\/\/hunterscomics\.com\/wp-content\/themes(\/[a-f]{6}){2}\.js\?ver=/$script,1p,domain=hunterscomics.com
 /^https:\/\/ik\.imagekit\.io\/[a-z0-9]+\/[a-zA-Z0-9_]+\.(jpg|png)\?updatedAt=/$match-case,image,domain=converter.app
+/^https:\/\/intercelestial\.com\/[a-z0-9]{10,14}\/[a-z0-9._-]+\.js(\?.*)?$/$script,domain=intercelestial.com
 /^https:\/\/js\.txxx\.tube\/[a-z]+\/[a-z]+[0-9]+\.[0-9]+\.[0-9]+\.[0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f]\.js$/$script,3p,match-case
 /^https:\/\/kick\.com\/[0-9A-z]{16}\/[0-9A-z]{16}\?apiKey=/$script,1p,match-case,domain=kick.com
 /^https:\/\/korea\.epsilonsoft\.to/[a-zA-Z0-9][a-zA-Z0-9][a-zA-Z0-9][a-zA-Z0-9][a-zA-Z0-9][a-zA-Z0-9][a-zA-Z0-9].js$/$script,domain=epsilonsoft.to
@@ -7179,7 +7180,6 @@ anysex.com#%#//scriptlet("abort-on-property-read", "z7OO")
 anysex.com#%#//scriptlet('abort-on-property-write', 'setExoCookie')
 anysex.com#%#//scriptlet('abort-on-stack-trace', 'decodeURI', '.<computed>.get')
 aok.de#$?#dialog[data-module="cookie-manager-dialog"] { remove: true; }
-aol.com,kleber-tyres.com,kleber.es,kleber.pl,blablacar.pl#%#//scriptlet('trusted-click-element', 'button#didomi-notice-disagree-button')
 ap7am.com#%#//scriptlet('trusted-click-element', '#road-block-direct')
 aparat.cam#%#//scriptlet('prevent-window-open')
 apetogentleman.com,geizdental.de#%#//scriptlet('set-cookie', 'newsletter', '1')
@@ -7528,6 +7528,7 @@ backmarket.co.jp#%#//scriptlet('set-cookie', 'BM_User_Experience', 'false')
 backmarket.de#%#//scriptlet('set-cookie', 'BM_Analytics', 'false')
 backmarket.de#%#//scriptlet('set-cookie', 'BM_User_Experience', 'false')
 backmarket.de#%#//scriptlet('set-cookie-reload', 'BM_Advertising', 'false')
+backpacker.com,aol.com,kleber-tyres.com,kleber.es,kleber.pl,blablacar.pl#%#//scriptlet('trusted-click-element', 'button#didomi-notice-disagree-button')
 backstagepro.de#%#//scriptlet('set-cookie', 'cconsent', '1')
 badassdownloader.com#%#//scriptlet('prevent-setTimeout', 'innerHTML')
 badassdownloader.com#%#//scriptlet('set-constant', 'bscheck.adblocker', 'noopFunc')
@@ -8157,6 +8158,8 @@ celeb.gate.cc#%#//scriptlet("abort-on-property-read", "dataPopUnder")
 celebfapper.com#%#//scriptlet('prevent-setTimeout', 'adblocktag')
 cellmapper.net#%#//scriptlet("prevent-setTimeout", "/children\('ins'\)|Adblock|adsbygoogle/")
 centrum-air.com#%#//scriptlet('trusted-set-cookie', 'cookieConsent', 'dontShowCookie')
+centrumfotelikow.pl,ziolaioleje.pl,houseofpostcards.pl,sklep.precio.pl,kim24.pl,sklep.moderat.pl,dlagentlemana.pl,nogame.pl,propaganda24h.pl,gomedia.net.pl,sklep.coconaut.com,anhko.pl,4motos.pl,aluramy.pl,ameco-meble-biurowe.pl,exerion.pl,multigastro.pl,badrex-sklep.pl,spinedu.pl,aquamelior.pl,e-hortico.pl,sklep.doppelherz.pl,jestemwbajce.pl,greentouch.pl,4zywioly.pl,kanken.pl,zlotywidelec.pl,sklep.rowery.pl,ketabike.pl,bikerstudio.com.pl,nowakmeble.eu,korona-kielce.pl,mmacity.pl,zadzior.pl,tiptop24.pl,superbutelki.pl,polskibanan.pl,woolona.pl,evertrek.pl,71store.pl,paczkaurody.pl,vetamicus.pl,rbl24.pl,goredo.pl,sklep.yanosik.pl,sklep.bakata.pl,dvbsklep.pl,sklep.telmor.pl,ambition.pl,makalele.pl,carfrance24.pl,kamieniolomy.pl,tukado.pl,capitalbook.com.pl,siglent.com.pl,asan.com.pl,przyczolek.pl,fan.com.pl,elty.pl,roboexpert.pl,jogowy.pl,otulenizapachem.pl,megasam24.pl,sklep.aquick.pl,virtualeye.pl,on-bike.pl,allweld.pl,sklepamarparkiety.pl,hispanito.pl,sklep.dps-software.pl,plantro.pl,meble.expert,xeromania.pl,przeciwpozarowy.com,najlepszefiltry.pl,dynamometryczne.pl,sklep.emmeble.pl,kupkrzeslo.pl,tts.com.pl,wiklik.pl,mildis.pl,upbiuro.pl,ergobiuro.pl,meblemwm.pl,pasiekisadowskich.pl,grupagsm.pl,lpbros.pl,sklep.muduko.com,rowerowelove.shop,efragola.pl,everprint.pl,sklep.serverico.pl,horse-toys.pl,netsklep.com,bubutik.pl,fitness-home.pl,alpinepro.pl,sklep-albatros.pl,monikakaminska.com,elitaro.pl,zegarkiwsieci.pl,yourhouse24.de,wings24.pl,softmm.com.pl,sklep.pl,ewozki.eu,portalgames.pl,gbs.pl,mawcom-elektronarzedzia.pl,metalkas.com.pl,bakeshop.pl,audiotop.pl,sklep.keeza.pl,sklepkawa.pl,fly-desk.com,estetic-dent-sklep.pl,skarbyroztocza.com,miodykrupiec.pl,planszostrefa.pl,questsport.shop,flystore.pl,sklep.70mai.pl,agroczak.pl,led-studio.pl,jptech-maszyny.pl,notopstryk.pl,cebit.pl,polkabubu.pl#%#//scriptlet('set-local-storage-item', 'show_consent_modal', '1')
+centrumfotelikow.pl,ziolaioleje.pl,houseofpostcards.pl,sklep.precio.pl,kim24.pl,sklep.moderat.pl,dlagentlemana.pl,nogame.pl,propaganda24h.pl,gomedia.net.pl,sklep.coconaut.com,anhko.pl,4motos.pl,aluramy.pl,ameco-meble-biurowe.pl,exerion.pl,multigastro.pl,badrex-sklep.pl,spinedu.pl,aquamelior.pl,e-hortico.pl,sklep.doppelherz.pl,jestemwbajce.pl,greentouch.pl,4zywioly.pl,kanken.pl,zlotywidelec.pl,sklep.rowery.pl,ketabike.pl,bikerstudio.com.pl,nowakmeble.eu,korona-kielce.pl,mmacity.pl,zadzior.pl,tiptop24.pl,superbutelki.pl,polskibanan.pl,woolona.pl,evertrek.pl,71store.pl,paczkaurody.pl,vetamicus.pl,rbl24.pl,goredo.pl,sklep.yanosik.pl,sklep.bakata.pl,dvbsklep.pl,sklep.telmor.pl,ambition.pl,makalele.pl,carfrance24.pl,kamieniolomy.pl,tukado.pl,capitalbook.com.pl,siglent.com.pl,asan.com.pl,przyczolek.pl,fan.com.pl,elty.pl,roboexpert.pl,jogowy.pl,otulenizapachem.pl,megasam24.pl,sklep.aquick.pl,virtualeye.pl,on-bike.pl,allweld.pl,sklepamarparkiety.pl,hispanito.pl,sklep.dps-software.pl,plantro.pl,meble.expert,xeromania.pl,przeciwpozarowy.com,najlepszefiltry.pl,dynamometryczne.pl,sklep.emmeble.pl,kupkrzeslo.pl,tts.com.pl,wiklik.pl,mildis.pl,upbiuro.pl,ergobiuro.pl,meblemwm.pl,pasiekisadowskich.pl,grupagsm.pl,lpbros.pl,sklep.muduko.com,rowerowelove.shop,efragola.pl,everprint.pl,sklep.serverico.pl,horse-toys.pl,netsklep.com,bubutik.pl,fitness-home.pl,alpinepro.pl,sklep-albatros.pl,monikakaminska.com,elitaro.pl,zegarkiwsieci.pl,yourhouse24.de,wings24.pl,softmm.com.pl,sklep.pl,ewozki.eu,portalgames.pl,gbs.pl,mawcom-elektronarzedzia.pl,metalkas.com.pl,bakeshop.pl,audiotop.pl,sklep.keeza.pl,sklepkawa.pl,fly-desk.com,estetic-dent-sklep.pl,skarbyroztocza.com,miodykrupiec.pl,planszostrefa.pl,questsport.shop,flystore.pl,sklep.70mai.pl,agroczak.pl,led-studio.pl,jptech-maszyny.pl,notopstryk.pl,cebit.pl,polkabubu.pl#%#//scriptlet('set-local-storage-item', 'user_consents', 'emptyArr')
 centrumxp.pl#%#//scriptlet('prevent-setTimeout', 'c(!0)', '10000')
 centrumxp.pl#%#//scriptlet('set-local-storage-item', 'analytics', 'false')
 centrumxp.pl#%#//scriptlet('set-local-storage-item', 'marketing', 'false')
@@ -9385,6 +9388,8 @@ ephoto360.com#%#//scriptlet("abort-current-inline-script", "$", "Adblock")
 epic.hellosports.live#%#//scriptlet('prevent-setTimeout', 'offsetHeight')
 epicdrama.eu#%#//scriptlet('set-cookie', 'cookies_popup', '0')
 epicgames.com#%#//scriptlet('prevent-xhr', '/id/api/analytics')
+epicroms.net#%#//scriptlet('remove-node-text', 'script', '/\(\)\;void window\;/')
+epicroms.net$$script:contains(/\;void window\;/)
 epicurious.com#%#//scriptlet('set-cookie', 'FP_visitorID', '1', '/', 'epicurious.com')
 epiotrkow.pl#%#//scriptlet('abort-current-inline-script', 'EventTarget.prototype.addEventListener', '/\/asyncjs\.php|adBlock/')
 eporner.com#%#//scriptlet('abort-on-property-write', 'initEPNB')
@@ -9551,15 +9556,15 @@ f1-insider.com#%#//scriptlet('set-cookie', 'perfectSub', 'true')
 f1livegp.me#%#//scriptlet('prevent-fetch', 'googleadservices.com')
 f2movies.*#%#//scriptlet('set-constant', 'document.write', 'undefined')
 f2movies.to,streameast.watch#%#//scriptlet("abort-current-inline-script", "JSON.parse", "getPropertyValue('content')")
-f4scdn.com#%#(()=>{const n={apply:(n,o,t)=>{try{"open"===o?.name&&"_blank"===t?.[2]&&(o=window.open)}catch(n){}return Reflect.apply(n,o,t)}};window.Function.prototype.call=new Proxy(window.Function.prototype.call,n)})();
-f4scdn.com#%#(()=>{const o={apply:(o,t,e)=>{const n=e[0];return"boolean"==typeof n&&!0===n&&(e[0]=!1),Reflect.apply(o,t,e)}},t={apply:(t,e,n)=>{try{const t=n[0];"function"==typeof t&&t.toString().includes("blockAdblock")&&(n[0]=new Proxy(n[0],o))}catch(o){}return Reflect.apply(t,e,n)}};window.Promise.prototype.then=new Proxy(window.Promise.prototype.then,t)})();
-f4scdn.com#%#//scriptlet('json-prune', '$.[?(@.urls && @.vast)].*')
-f4scdn.com#%#//scriptlet('prevent-fetch', 'pagead2.googlesyndication.com')
-f4scdn.com#%#//scriptlet('prevent-window-open', '_blank')
-f4scdn.com#%#//scriptlet('remove-attr', 'data-block-adblock', '.player-wrap[data-block-adblock]')
 f4scdn.com,f4stream.com#%#//scriptlet('remove-attr', 'data-block-adblock', '.player-wrap', 'asap stay')
 f4splay.vip#%#//scriptlet('prevent-fetch', 'pagead2.googlesyndication.com')
 f4splay.vip#%#//scriptlet('remove-attr', 'data-ads', '.player-wrap')
+f4splay.vip,f4scdn.com#%#(()=>{const n={apply:(n,o,t)=>{try{"open"===o?.name&&"_blank"===t?.[2]&&(o=window.open)}catch(n){}return Reflect.apply(n,o,t)}};window.Function.prototype.call=new Proxy(window.Function.prototype.call,n)})();
+f4splay.vip,f4scdn.com#%#(()=>{const o={apply:(o,t,e)=>{const n=e[0];return"boolean"==typeof n&&!0===n&&(e[0]=!1),Reflect.apply(o,t,e)}},t={apply:(t,e,n)=>{try{const t=n[0];"function"==typeof t&&t.toString().includes("blockAdblock")&&(n[0]=new Proxy(n[0],o))}catch(o){}return Reflect.apply(t,e,n)}};window.Promise.prototype.then=new Proxy(window.Promise.prototype.then,t)})();
+f4splay.vip,f4scdn.com#%#//scriptlet('json-prune', '$.[?(@.urls && @.vast)].*')
+f4splay.vip,f4scdn.com#%#//scriptlet('prevent-fetch', 'pagead2.googlesyndication.com')
+f4splay.vip,f4scdn.com#%#//scriptlet('prevent-window-open', '_blank')
+f4splay.vip,f4scdn.com#%#//scriptlet('remove-attr', 'data-block-adblock', '.player-wrap[data-block-adblock]')
 f7hyg4q.org,q8y5z.com,rupertisdivingintoocean.com,398fitus.com,f75s.com,f16px.com#%#//scriptlet('prevent-setTimeout', 'readyWait')
 faberkabel.de#%#//scriptlet('trusted-click-element', '#modalCookie .button-red')
 fabrykarowerow.com#%#//scriptlet('trusted-set-cookie-reload', 'go-cookie-prefs', 'eyJlc3NlbnRpYWwiOnRydWUsImZ1bmN0aW9uYWwiOmZhbHNlLCJhbmFseXRpY2FsIjpmYWxzZSwicGVyc29uYWxpemF0aW9uIjpmYWxzZSwidHJhY2tpbmciOmZhbHNlfQ==')
@@ -9627,8 +9632,8 @@ faroutmagazine.co.uk#%#//scriptlet('hide-in-shadow-dom', '.GRVMpuWrapper')
 faselhd.cc,scanwp.net,viddown.net,yt-shorts-dl.com,porn3dx.com,porner.io,yesporn.io,nexify-zone.com,4khd.com,wallpaperalchemy.com#%#//scriptlet('prevent-window-open', '_blank')
 fashiola.de#%#//scriptlet('trusted-click-element', '#reject-cookies-button', '', '2000')
 fashionunited.*#%#//scriptlet('set-cookie', 'EU_COOKIE_LAW_CONSENT', 'false')
-fast-down.com,lnbzi.com,lnbzi.com,linegee.net,aii.sh,srnky.com,clksz.com,fcportables.com,intercelestial.com#%#(()=>{try{const g=Object.getOwnPropertyDescriptor;Object.getOwnPropertyDescriptor=function(o,p){return o===navigator&&p==='webdriver'?undefined:g(o,p)}}catch(e){}})();
-fast-down.com,lnbzi.com,lnbzi.com,linegee.net,aii.sh,srnky.com,clksz.com,fcportables.com,intercelestial.com#%#//scriptlet('set-constant', 'navigator.webdriver', 'true')
+fast-down.com,lnbzi.com,linegee.net,aii.sh,srnky.com,clksz.com,fcportables.com,intercelestial.com#%#(()=>{try{const g=Object.getOwnPropertyDescriptor;Object.getOwnPropertyDescriptor=function(o,p){return o===navigator&&p==='webdriver'?undefined:g(o,p)}}catch(e){}})();
+fast-down.com,lnbzi.com,linegee.net,aii.sh,srnky.com,clksz.com,fcportables.com,intercelestial.com#%#//scriptlet('set-constant', 'navigator.webdriver', 'true')
 fast-torrent.ru#$?#html:has(> body) { padding-top: 0!important; }
 fastbikesmag.com#%#//scriptlet('remove-class', 'hustle-no-scroll', 'html')
 fastcoin.ga,swift4claim.com,appnee.com,msmxtended.org,reevown.com,cryptofun.space,justlightnovels.com,tranimeizle.*#%#//scriptlet("prevent-setInterval", "/.\.display=='hidden'[\s\S]*?.\.visibility=='none'/")
@@ -10082,6 +10087,7 @@ fullvideosporn.com#%#//scriptlet('prevent-setTimeout', '/initPops|popLite|popund
 fumettologica.it#%#//scriptlet('set-constant', 'td_ad_background_click_link', 'undefined')
 funclub.pl#%#//scriptlet('set-cookie', 'cookie_alert', 'true')
 funclub.pl#%#//scriptlet('trusted-set-local-storage-item', 'EUConsents', '{"ad_storage":"denied","ad_user_data":"denied","ad_personalization":"denied","analytics_storage":"denied","functionality_storage":"granted"}')
+functioncube.com#%#//scriptlet('prevent-element-src-loading', 'script', 'adsbygoogle')
 fundednext.com#%#//scriptlet('set-local-storage-item', 'cookieClose', 'true')
 fuqer.com#%#//scriptlet("abort-on-property-read", "fUnder")
 fuqqt.com,tubesafari.com,pornkai.com#%#//scriptlet("abort-on-property-read", "ljcode")
@@ -14088,7 +14094,7 @@ premierfantasytools.com#%#//scriptlet("abort-on-property-read", "checkForAdBlock
 premierftp.net#%#//scriptlet('prevent-addEventListener', 'DOMContentLoaded', 'is_url_banned')
 premiumebooks.*#%#//scriptlet('abort-current-inline-script', 'document.getElementsByTagName', '/antiAdBlock|adblock/')
 premiumkino.de#%#//scriptlet('set-cookie', 'cookie_required', 'true')
-prepmymeal.com#%#//scriptlet('trusted-click-element', '#shopify-pc__banner__btn-decline')
+prepmymeal.com,prepmymeal.nl,prepmymeal.fr#%#//scriptlet('trusted-click-element', '#shopify-pc__banner__btn-decline')
 prepostseo.com#%#//scriptlet("set-constant", "showDabay", "noopFunc")
 prepostseo.com#%#//scriptlet('prevent-fetch', '/pagead2\.googlesyndication\.com|\/ad\.js/')
 prepp.in#%#//scriptlet('trusted-set-cookie', 'ldCookie', 'closed')
@@ -16833,6 +16839,7 @@ voyeurhit.com#%#//scriptlet("set-constant", "adver", "noopFunc")
 voz.vn%2Fb%2Fimage.gif%3Fp%3D*$image
 voz.vn/b/image.gif?p=$image
 vplink.in,gamesmain.xyz#%#//scriptlet('prevent-setTimeout', 'window.location.href')
+vpnjantit.com#%#//scriptlet('prevent-element-src-loading', 'script', 'adsbygoogle')
 vportal.ctu.cz#%#//scriptlet('trusted-set-cookie-reload', 'AppAnalytic', 'off')
 vr.fi#%#//scriptlet('trusted-click-element', 'dialog[data-testid="cookie-consent-modal"] button[data-testid="necessary"]')
 vrcmods.com#%#//scriptlet("abort-on-property-read", "bruhded")
@@ -17555,8 +17562,6 @@ zhuanlan.zhihu.com#%#//scriptlet('trusted-click-element', '.signFlowModal .Modal
 zielony-parapet.pl,vipera.com.pl#%#//scriptlet('trusted-set-cookie', '_x13eucookie', '{"1":true,"2":false,"3":false,"4":false}')
 ziggame.com#%#//scriptlet('prevent-window-open', '!linkbulks.com')
 zillow.com#%#//scriptlet('set-constant', 'DD_RUM.addError', 'noopFunc')
-ziolaioleje.pl,houseofpostcards.pl,sklep.precio.pl,kim24.pl,sklep.moderat.pl,dlagentlemana.pl,nogame.pl,propaganda24h.pl,gomedia.net.pl,sklep.coconaut.com,anhko.pl,4motos.pl,aluramy.pl,ameco-meble-biurowe.pl,exerion.pl,multigastro.pl,badrex-sklep.pl,spinedu.pl,aquamelior.pl,e-hortico.pl,sklep.doppelherz.pl,jestemwbajce.pl,greentouch.pl,4zywioly.pl,kanken.pl,zlotywidelec.pl,sklep.rowery.pl,ketabike.pl,bikerstudio.com.pl,nowakmeble.eu,korona-kielce.pl,mmacity.pl,zadzior.pl,tiptop24.pl,superbutelki.pl,polskibanan.pl,woolona.pl,evertrek.pl,71store.pl,paczkaurody.pl,vetamicus.pl,rbl24.pl,goredo.pl,sklep.yanosik.pl,sklep.bakata.pl,dvbsklep.pl,sklep.telmor.pl,ambition.pl,makalele.pl,carfrance24.pl,kamieniolomy.pl,tukado.pl,capitalbook.com.pl,siglent.com.pl,asan.com.pl,przyczolek.pl,fan.com.pl,elty.pl,roboexpert.pl,jogowy.pl,otulenizapachem.pl,megasam24.pl,sklep.aquick.pl,virtualeye.pl,on-bike.pl,allweld.pl,sklepamarparkiety.pl,hispanito.pl,sklep.dps-software.pl,plantro.pl,meble.expert,xeromania.pl,przeciwpozarowy.com,najlepszefiltry.pl,dynamometryczne.pl,sklep.emmeble.pl,kupkrzeslo.pl,tts.com.pl,wiklik.pl,mildis.pl,upbiuro.pl,ergobiuro.pl,meblemwm.pl,pasiekisadowskich.pl,grupagsm.pl,lpbros.pl,sklep.muduko.com,rowerowelove.shop,efragola.pl,everprint.pl,sklep.serverico.pl,horse-toys.pl,netsklep.com,bubutik.pl,fitness-home.pl,alpinepro.pl,sklep-albatros.pl,monikakaminska.com,elitaro.pl,zegarkiwsieci.pl,yourhouse24.de,wings24.pl,softmm.com.pl,sklep.pl,ewozki.eu,portalgames.pl,gbs.pl,mawcom-elektronarzedzia.pl,metalkas.com.pl,bakeshop.pl,audiotop.pl,sklep.keeza.pl,sklepkawa.pl,fly-desk.com,estetic-dent-sklep.pl,skarbyroztocza.com,miodykrupiec.pl,planszostrefa.pl,questsport.shop,flystore.pl,sklep.70mai.pl,agroczak.pl,led-studio.pl,jptech-maszyny.pl,notopstryk.pl,cebit.pl,polkabubu.pl#%#//scriptlet('set-local-storage-item', 'show_consent_modal', '1')
-ziolaioleje.pl,houseofpostcards.pl,sklep.precio.pl,kim24.pl,sklep.moderat.pl,dlagentlemana.pl,nogame.pl,propaganda24h.pl,gomedia.net.pl,sklep.coconaut.com,anhko.pl,4motos.pl,aluramy.pl,ameco-meble-biurowe.pl,exerion.pl,multigastro.pl,badrex-sklep.pl,spinedu.pl,aquamelior.pl,e-hortico.pl,sklep.doppelherz.pl,jestemwbajce.pl,greentouch.pl,4zywioly.pl,kanken.pl,zlotywidelec.pl,sklep.rowery.pl,ketabike.pl,bikerstudio.com.pl,nowakmeble.eu,korona-kielce.pl,mmacity.pl,zadzior.pl,tiptop24.pl,superbutelki.pl,polskibanan.pl,woolona.pl,evertrek.pl,71store.pl,paczkaurody.pl,vetamicus.pl,rbl24.pl,goredo.pl,sklep.yanosik.pl,sklep.bakata.pl,dvbsklep.pl,sklep.telmor.pl,ambition.pl,makalele.pl,carfrance24.pl,kamieniolomy.pl,tukado.pl,capitalbook.com.pl,siglent.com.pl,asan.com.pl,przyczolek.pl,fan.com.pl,elty.pl,roboexpert.pl,jogowy.pl,otulenizapachem.pl,megasam24.pl,sklep.aquick.pl,virtualeye.pl,on-bike.pl,allweld.pl,sklepamarparkiety.pl,hispanito.pl,sklep.dps-software.pl,plantro.pl,meble.expert,xeromania.pl,przeciwpozarowy.com,najlepszefiltry.pl,dynamometryczne.pl,sklep.emmeble.pl,kupkrzeslo.pl,tts.com.pl,wiklik.pl,mildis.pl,upbiuro.pl,ergobiuro.pl,meblemwm.pl,pasiekisadowskich.pl,grupagsm.pl,lpbros.pl,sklep.muduko.com,rowerowelove.shop,efragola.pl,everprint.pl,sklep.serverico.pl,horse-toys.pl,netsklep.com,bubutik.pl,fitness-home.pl,alpinepro.pl,sklep-albatros.pl,monikakaminska.com,elitaro.pl,zegarkiwsieci.pl,yourhouse24.de,wings24.pl,softmm.com.pl,sklep.pl,ewozki.eu,portalgames.pl,gbs.pl,mawcom-elektronarzedzia.pl,metalkas.com.pl,bakeshop.pl,audiotop.pl,sklep.keeza.pl,sklepkawa.pl,fly-desk.com,estetic-dent-sklep.pl,skarbyroztocza.com,miodykrupiec.pl,planszostrefa.pl,questsport.shop,flystore.pl,sklep.70mai.pl,agroczak.pl,led-studio.pl,jptech-maszyny.pl,notopstryk.pl,cebit.pl,polkabubu.pl#%#//scriptlet('set-local-storage-item', 'user_consents', 'emptyArr')
 ziperto.com#%#//scriptlet('remove-node-text', 'script', 'newHref = href.replace')
 zippyshare.day#%#//scriptlet('prevent-fetch', 'pagead2.googlesyndication.com')
 zive.cz#%#//scriptlet('set-constant', 'st', 'noopFunc')
@@ -18373,6 +18378,7 @@ zygomatic.arkadiumarena.com#%#//scriptlet('trusted-replace-argument', 'JSON.pars
 ||9animetv.to/js/safe.ob.min.js$script
 ||9hito.com^$third-party
 ||9king888.cc^
+||9news.com/*/*/*/db/*/*/*/*?v=*-*-*-*-$1p
 ||9nl.eu^$third-party
 ||9ty1.com^$doc
 ||9xmovies.*/sw.js$script,1p
@@ -26660,8 +26666,8 @@ zygomatic.arkadiumarena.com#%#//scriptlet('trusted-replace-argument', 'JSON.pars
 ||com/p/jcod-ppsr/huasdirjdo^$doc
 ||com/script/*.js|$script,3p,domain=sparkchess.com
 ||com/script/*.js|$script,3p,header=location:https://stg.*
-||com/|$xhr,3p,domain=398fitus.com|andyday.pe|anime3rb.com|animeflv.net|animez.org|bflix.sh|cardboardtranslation.com|cloudnestra.com|curiosidadtop.com|dlhd.click|dorawatch.net|ebook-hunter.org|embedcanais.com|embedhd.org|embedtv.net|eternalmangas.org|f16px.com|familypornhd.com|fbstreams.pm|fmoviesto.fi|fojik.com|freemoviesfull.com|futemais.net|giize.com|hoca6.com|htsport.org|instalker.org|jojolandsmanga.com|instalker.org|kaa.mx|luckypatchers.com|luluvdoo.com|mgread.io|mlbb.space|olympustaff.com|overtakefans.com|playerflixapi.com|reviewrate.net|souq-design.com|spotifylists.com|streamlord.com|summerhikarudied.com|telepisodes.org|tfp.is|tutvlive.ru|twstalker.com|up-4ever.net|ups2up.fun|vecloud.eu|vipbox.lc|watchf1full.com|webxzplay.cfd|weneverbeenfree.com|xoxocomic.com|yuppow.com
-||com/|$xhr,3p,method=head,domain=andyday.*|animeunity.*|asd.*|bflix.*|dlhd.*|fmoviesto.*|fojik.*|hianime.*|moviesjoy.*|mywatchseries.*|sportshub.*|streaming-community.*|streamingcommunityz.*|vipbox.*|way2movies.*|398fitus.com|andyday.pe|anime3rb.com|animeflv.net|animez.org|bflix.sh|cardboardtranslation.com|cloudnestra.com|curiosidadtop.com|dlhd.click|dorawatch.net|ebook-hunter.org|embedcanais.com|embedhd.org|embedtv.net|eternalmangas.org|f16px.com|familypornhd.com|fbstreams.pm|fmoviesto.fi|fojik.com|freemoviesfull.com|futemais.net|giize.com|hoca6.com|htsport.org|instalker.org|jojolandsmanga.com|instalker.org|kaa.mx|luckypatchers.com|luluvdoo.com|mgread.io|mlbb.space|olympustaff.com|overtakefans.com|playerflixapi.com|reviewrate.net|souq-design.com|spotifylists.com|streamlord.com|summerhikarudied.com|telepisodes.org|tfp.is|tutvlive.ru|twstalker.com|up-4ever.net|ups2up.fun|vecloud.eu|vipbox.lc|watchf1full.com|webxzplay.cfd|weneverbeenfree.com|xoxocomic.com|yuppow.com
+||com/|$xhr,3p,domain=398fitus.com|andyday.pe|anime3rb.com|animeflv.net|animez.org|bflix.sh|cardboardtranslation.com|cloudnestra.com|curiosidadtop.com|dlhd.click|dorawatch.net|ebook-hunter.org|embedcanais.com|embedhd.org|embedtv.net|eternalmangas.org|f16px.com|familypornhd.com|fbstreams.pm|fojik.com|freemoviesfull.com|futemais.net|giize.com|hoca6.com|htsport.org|instalker.org|jojolandsmanga.com|instalker.org|kaa.mx|luckypatchers.com|luluvdoo.com|mgread.io|mlbb.space|olympustaff.com|overtakefans.com|playerflixapi.com|reviewrate.net|souq-design.com|spotifylists.com|streamlord.com|summerhikarudied.com|telepisodes.org|tfp.is|tutvlive.ru|twstalker.com|up-4ever.net|ups2up.fun|vecloud.eu|vipbox.lc|watchf1full.com|webxzplay.cfd|weneverbeenfree.com|xoxocomic.com|yuppow.com
+||com/|$xhr,3p,method=head,domain=andyday.*|animeunity.*|asd.*|bflix.*|dlhd.*|fmoviesto.*|fojik.*|hianime.*|moviesjoy.*|mywatchseries.*|sportshub.*|streaming-community.*|streamingcommunityz.*|vipbox.*|way2movies.*|398fitus.com|andyday.pe|anime3rb.com|animeflv.net|animez.org|bflix.sh|cardboardtranslation.com|cloudnestra.com|curiosidadtop.com|dlhd.click|dorawatch.net|ebook-hunter.org|embedcanais.com|embedhd.org|embedtv.net|eternalmangas.org|f16px.com|familypornhd.com|fbstreams.pm|fojik.com|freemoviesfull.com|futemais.net|giize.com|hoca6.com|htsport.org|instalker.org|jojolandsmanga.com|instalker.org|kaa.mx|luckypatchers.com|luluvdoo.com|mgread.io|mlbb.space|olympustaff.com|overtakefans.com|playerflixapi.com|reviewrate.net|souq-design.com|spotifylists.com|streamlord.com|summerhikarudied.com|telepisodes.org|tfp.is|tutvlive.ru|twstalker.com|up-4ever.net|ups2up.fun|vecloud.eu|vipbox.lc|watchf1full.com|webxzplay.cfd|weneverbeenfree.com|xoxocomic.com|yuppow.com
 ||com/|$xhr,3p,method=head,ipaddress=/^139\.45\.19[5-7]\./
 ||com^$doc,ipaddress=206.82.7.123
 ||com^$doc,ipaddress=38.114.120.167
@@ -30309,6 +30315,7 @@ zygomatic.arkadiumarena.com#%#//scriptlet('trusted-replace-argument', 'JSON.pars
 ||events-stream-svc.cordial.io^
 ||events-stream-svc.usw2.cordial.com^
 ||events-tracker.deliveroo.net^
+||events.*.oci.oraclecloud.com^
 ||events.*/takeaway/takeaway.com/*/*.gif$domain=thuisbezorgd.nl|takeaway.com|just-eat.ch|lieferando.at|lieferando.de|just-eat.fr|pyszne.pl|just-eat.dk|just-eat.no
 ||events.apester.com^
 ||events.api.gamma.app^
@@ -30841,6 +30848,7 @@ zygomatic.arkadiumarena.com#%#//scriptlet('trusted-replace-argument', 'JSON.pars
 ||fcm-collect-api.alyac.com^
 ||fcmatch.google.com/pixel
 ||fcmatch.youtube.com/pixel
+||fcportables.com/p4on3l/
 ||fcs.ovh^$third-party
 ||fdolspwa.my^$all
 ||fe-go.letv.com^
@@ -30947,6 +30955,7 @@ zygomatic.arkadiumarena.com#%#//scriptlet('trusted-replace-argument', 'JSON.pars
 ||file-typ-botcheck*.b-cdn.net^$doc
 ||file-upload.com^$csp=sandbox allow-forms allow-same-origin allow-scripts allow-modals allow-orientation-lock allow-pointer-lock allow-presentation allow-top-navigation
 ||file.galpic.xyz/axfile/*.gif$domain=ggbases.com
+||filecatchers.com/k5yy6w/
 ||filecr.com/_next/static/chunks/framework-*.js$replace=/throw Error\(.\(418\)\);/null;/,domain=filecr.com
 ||filecr.com/_next/static/chunks/pages/*.js$replace=/(return new Promise\(.=>{.\().\|\|.(\)}\))/\$1!1\$2/
 ||filecr.com/wp-content/cache/autoptimize/js/autoptimize_*.js$replace=/adsSrc='[\s\S]*?';/adsSrc='';/
@@ -32396,6 +32405,7 @@ zygomatic.arkadiumarena.com#%#//scriptlet('trusted-replace-argument', 'JSON.pars
 ||globaldjmix.com/dist/js/script_site_detect.js
 ||globalgrainsadf.com^$all
 ||globalinfo.az/export/
+||globalpromo.az/placements.js$domain=baku.ws
 ||globalreward77.com^$doc
 ||globalservices.conde.digital^
 ||globalsiteanalytics.com^
@@ -37054,7 +37064,6 @@ zygomatic.arkadiumarena.com#%#//scriptlet('trusted-replace-argument', 'JSON.pars
 ||leechpremium.link/iframe.php
 ||leechpremium.net/*/main.js$replace=/\\$\(window\.atob\('Lm1haW4tY29udGVudA=='\)\)\.html\(window\.atob\('PGNlbnRlcj48aDE\+UGxlYXNlIGRpc2FibGUgeW91ciBhZGJsb2NrZXIgYW5kIHRoYW4gcmVmcmVzaCB0aGUgc2l0ZS48L2gxPjxicj5NYXliZSBDVFJMICsgRjUgd2lsbCBoZWxwIHRvbzwvY2VudGVyPg=='\)\);/var hello;/
 ||leefmylife.info^$third-party
-||leewibaijoa.com^$doc,popup
 ||leftnewsex.com/fb/fb_hilltopads.php
 ||legacy-whatsapp.com^$doc
 ||legalmonster.com^$third-party
@@ -37793,6 +37802,7 @@ zygomatic.arkadiumarena.com#%#//scriptlet('trusted-replace-argument', 'JSON.pars
 ||logger.tv.telstra.com.au^
 ||logger.tvchosun.com^
 ||logger.virgul.com^
+||logging.*.oci.oraclecloud.com^
 ||logging.api.intuit.com^
 ||logging.carambo.la^
 ||logging.e-himart.co.kr^
@@ -41239,8 +41249,8 @@ zygomatic.arkadiumarena.com#%#//scriptlet('trusted-replace-argument', 'JSON.pars
 ||net.redroses.top^$doc
 ||net.shop.com.mm^
 ||net/*/ModalEngage|$script,3p
-||net/|$xhr,3p,domain=398fitus.com|andyday.pe|anime3rb.com|animeflv.net|animez.org|bflix.sh|cardboardtranslation.com|cloudnestra.com|curiosidadtop.com|dlhd.click|dorawatch.net|ebook-hunter.org|embedcanais.com|embedhd.org|embedtv.net|eternalmangas.org|f16px.com|familypornhd.com|fbstreams.pm|fmoviesto.fi|fojik.com|freemoviesfull.com|futemais.net|giize.com|hoca6.com|htsport.org|instalker.org|jojolandsmanga.com|instalker.org|kaa.mx|luckypatchers.com|luluvdoo.com|mgread.io|mlbb.space|olympustaff.com|overtakefans.com|playerflixapi.com|reviewrate.net|souq-design.com|spotifylists.com|streamlord.com|summerhikarudied.com|telepisodes.org|tfp.is|tutvlive.ru|twstalker.com|up-4ever.net|ups2up.fun|vecloud.eu|vipbox.lc|watchf1full.com|webxzplay.cfd|weneverbeenfree.com|xoxocomic.com|yuppow.com
-||net/|$xhr,3p,method=head,domain=andyday.*|animeunity.*|asd.*|bflix.*|dlhd.*|fmoviesto.*|fojik.*|hianime.*|moviesjoy.*|mywatchseries.*|sportshub.*|streaming-community.*|streamingcommunityz.*|vipbox.*|way2movies.*|398fitus.com|andyday.pe|anime3rb.com|animeflv.net|animez.org|bflix.sh|cardboardtranslation.com|cloudnestra.com|curiosidadtop.com|dlhd.click|dorawatch.net|ebook-hunter.org|embedcanais.com|embedhd.org|embedtv.net|eternalmangas.org|f16px.com|familypornhd.com|fbstreams.pm|fmoviesto.fi|fojik.com|freemoviesfull.com|futemais.net|giize.com|hoca6.com|htsport.org|instalker.org|jojolandsmanga.com|instalker.org|kaa.mx|luckypatchers.com|luluvdoo.com|mgread.io|mlbb.space|olympustaff.com|overtakefans.com|playerflixapi.com|reviewrate.net|souq-design.com|spotifylists.com|streamlord.com|summerhikarudied.com|telepisodes.org|tfp.is|tutvlive.ru|twstalker.com|up-4ever.net|ups2up.fun|vecloud.eu|vipbox.lc|watchf1full.com|webxzplay.cfd|weneverbeenfree.com|xoxocomic.com|yuppow.com
+||net/|$xhr,3p,domain=398fitus.com|andyday.pe|anime3rb.com|animeflv.net|animez.org|bflix.sh|cardboardtranslation.com|cloudnestra.com|curiosidadtop.com|dlhd.click|dorawatch.net|ebook-hunter.org|embedcanais.com|embedhd.org|embedtv.net|eternalmangas.org|f16px.com|familypornhd.com|fbstreams.pm|fojik.com|freemoviesfull.com|futemais.net|giize.com|hoca6.com|htsport.org|instalker.org|jojolandsmanga.com|instalker.org|kaa.mx|luckypatchers.com|luluvdoo.com|mgread.io|mlbb.space|olympustaff.com|overtakefans.com|playerflixapi.com|reviewrate.net|souq-design.com|spotifylists.com|streamlord.com|summerhikarudied.com|telepisodes.org|tfp.is|tutvlive.ru|twstalker.com|up-4ever.net|ups2up.fun|vecloud.eu|vipbox.lc|watchf1full.com|webxzplay.cfd|weneverbeenfree.com|xoxocomic.com|yuppow.com
+||net/|$xhr,3p,method=head,domain=andyday.*|animeunity.*|asd.*|bflix.*|dlhd.*|fmoviesto.*|fojik.*|hianime.*|moviesjoy.*|mywatchseries.*|sportshub.*|streaming-community.*|streamingcommunityz.*|vipbox.*|way2movies.*|398fitus.com|andyday.pe|anime3rb.com|animeflv.net|animez.org|bflix.sh|cardboardtranslation.com|cloudnestra.com|curiosidadtop.com|dlhd.click|dorawatch.net|ebook-hunter.org|embedcanais.com|embedhd.org|embedtv.net|eternalmangas.org|f16px.com|familypornhd.com|fbstreams.pm|fojik.com|freemoviesfull.com|futemais.net|giize.com|hoca6.com|htsport.org|instalker.org|jojolandsmanga.com|instalker.org|kaa.mx|luckypatchers.com|luluvdoo.com|mgread.io|mlbb.space|olympustaff.com|overtakefans.com|playerflixapi.com|reviewrate.net|souq-design.com|spotifylists.com|streamlord.com|summerhikarudied.com|telepisodes.org|tfp.is|tutvlive.ru|twstalker.com|up-4ever.net|ups2up.fun|vecloud.eu|vipbox.lc|watchf1full.com|webxzplay.cfd|weneverbeenfree.com|xoxocomic.com|yuppow.com
 ||net/|$xhr,3p,method=head,ipaddress=/^139\.45\.19[5-7]\./
 ||netaffiliation.com^$3p
 ||netaffiliation.com^$badfilter
@@ -51374,6 +51384,7 @@ zygomatic.arkadiumarena.com#%#//scriptlet('trusted-replace-argument', 'JSON.pars
 ||telemetry-in.battle.net^
 ||telemetry-web.api.playstation.com^$redirect=nooptext
 ||telemetry.*.oci.oraclecloud.com^
+||telemetry.*.oraclecloud.com^
 ||telemetry.*.pvp.net^
 ||telemetry.adobe.io^
 ||telemetry.adsninja.ca^
@@ -56421,8 +56432,8 @@ zygomatic.arkadiumarena.com#%#//scriptlet('trusted-replace-argument', 'JSON.pars
 ||xy58.jp^$doc
 ||xys*-jadwal.pages.dev/adblock.js
 ||xyz/akbank/$doc
-||xyz/|$xhr,3p,domain=398fitus.com|andyday.pe|anime3rb.com|animeflv.net|animez.org|bflix.sh|cardboardtranslation.com|cloudnestra.com|curiosidadtop.com|dlhd.click|dorawatch.net|ebook-hunter.org|embedcanais.com|embedhd.org|embedtv.net|eternalmangas.org|f16px.com|familypornhd.com|fbstreams.pm|fmoviesto.fi|fojik.com|freemoviesfull.com|futemais.net|giize.com|hoca6.com|htsport.org|instalker.org|jojolandsmanga.com|instalker.org|kaa.mx|luckypatchers.com|luluvdoo.com|mgread.io|mlbb.space|olympustaff.com|overtakefans.com|playerflixapi.com|reviewrate.net|souq-design.com|spotifylists.com|streamlord.com|summerhikarudied.com|telepisodes.org|tfp.is|tutvlive.ru|twstalker.com|up-4ever.net|ups2up.fun|vecloud.eu|vipbox.lc|watchf1full.com|webxzplay.cfd|weneverbeenfree.com|xoxocomic.com|yuppow.com
-||xyz/|$xhr,3p,method=head,domain=andyday.*|animeunity.*|asd.*|bflix.*|dlhd.*|fojik.*|fmoviesto.*|hianime.*|moviesjoy.*|mywatchseries.*|sportshub.*|streaming-community.*|streamingcommunityz.*|vipbox.*|way2movies.*|398fitus.com|andyday.pe|anime3rb.com|animeflv.net|animez.org|bflix.sh|cardboardtranslation.com|cloudnestra.com|curiosidadtop.com|dlhd.click|dorawatch.net|ebook-hunter.org|embedcanais.com|embedhd.org|embedtv.net|eternalmangas.org|f16px.com|familypornhd.com|fbstreams.pm|fmoviesto.fi|fojik.com|freemoviesfull.com|futemais.net|giize.com|hoca6.com|htsport.org|instalker.org|jojolandsmanga.com|instalker.org|kaa.mx|luckypatchers.com|luluvdoo.com|mgread.io|mlbb.space|olympustaff.com|overtakefans.com|playerflixapi.com|reviewrate.net|souq-design.com|spotifylists.com|streamlord.com|summerhikarudied.com|telepisodes.org|tfp.is|tutvlive.ru|twstalker.com|up-4ever.net|ups2up.fun|vecloud.eu|vipbox.lc|watchf1full.com|webxzplay.cfd|weneverbeenfree.com|xoxocomic.com|yuppow.com
+||xyz/|$xhr,3p,domain=398fitus.com|andyday.pe|anime3rb.com|animeflv.net|animez.org|bflix.sh|cardboardtranslation.com|cloudnestra.com|curiosidadtop.com|dlhd.click|dorawatch.net|ebook-hunter.org|embedcanais.com|embedhd.org|embedtv.net|eternalmangas.org|f16px.com|familypornhd.com|fbstreams.pm|fojik.com|freemoviesfull.com|futemais.net|giize.com|hoca6.com|htsport.org|instalker.org|jojolandsmanga.com|instalker.org|kaa.mx|luckypatchers.com|luluvdoo.com|mgread.io|mlbb.space|olympustaff.com|overtakefans.com|playerflixapi.com|reviewrate.net|souq-design.com|spotifylists.com|streamlord.com|summerhikarudied.com|telepisodes.org|tfp.is|tutvlive.ru|twstalker.com|up-4ever.net|ups2up.fun|vecloud.eu|vipbox.lc|watchf1full.com|webxzplay.cfd|weneverbeenfree.com|xoxocomic.com|yuppow.com
+||xyz/|$xhr,3p,method=head,domain=andyday.*|animeunity.*|asd.*|bflix.*|dlhd.*|fojik.*|fmoviesto.*|hianime.*|moviesjoy.*|mywatchseries.*|sportshub.*|streaming-community.*|streamingcommunityz.*|vipbox.*|way2movies.*|398fitus.com|andyday.pe|anime3rb.com|animeflv.net|animez.org|bflix.sh|cardboardtranslation.com|cloudnestra.com|curiosidadtop.com|dlhd.click|dorawatch.net|ebook-hunter.org|embedcanais.com|embedhd.org|embedtv.net|eternalmangas.org|f16px.com|familypornhd.com|fbstreams.pm|fojik.com|freemoviesfull.com|futemais.net|giize.com|hoca6.com|htsport.org|instalker.org|jojolandsmanga.com|instalker.org|kaa.mx|luckypatchers.com|luluvdoo.com|mgread.io|mlbb.space|olympustaff.com|overtakefans.com|playerflixapi.com|reviewrate.net|souq-design.com|spotifylists.com|streamlord.com|summerhikarudied.com|telepisodes.org|tfp.is|tutvlive.ru|twstalker.com|up-4ever.net|ups2up.fun|vecloud.eu|vipbox.lc|watchf1full.com|webxzplay.cfd|weneverbeenfree.com|xoxocomic.com|yuppow.com
 ||xyz/|$xhr,3p,method=head,ipaddress=/^139\.45\.19[5-7]\./
 ||xyz^$third-party,xmlhttprequest,domain=usescarlet.com
 ||xyzcomics.com/vixaizcomehpefw.php
